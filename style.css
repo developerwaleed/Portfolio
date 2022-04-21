@@ -1,0 +1,28 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  max-width: 100vw;
+}
+
+header {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 10px;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.menu {
+  margin-right: 10px;
+}
