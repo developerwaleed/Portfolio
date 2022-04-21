@@ -71,3 +71,7 @@ header {
 .connect:hover {
     color:#172b4d;
 }
+
+.social-icon {
+    margin-top: -4.5rem;
+  }
