@@ -54,3 +54,20 @@ header {
     margin-top: 5rem;
     margin-left: 2.5rem;
   }
+
+  .connect{
+    font-family: 'Inter', sans-serif;
+    color: #36b37e;
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    height: 2rem;
+    width: 12rem;
+    border: none;
+    background: none; 
+    font-size: 1.5rem;
+    transition: ease-out 1s;
+}
+.connect:hover {
+    color:#172b4d;
+}
