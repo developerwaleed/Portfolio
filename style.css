@@ -26,3 +26,31 @@ header {
 .menu {
   margin-right: 10px;
 }
+
+.landing-text {
+    text-align: center;
+    color: #172b4d;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+  }
+  
+  #landingtext {
+    color: #36b37e;
+  }
+
+  .landing-section {
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./icons/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #landingtext2 {
+    width: 25rem;
+    height: 20rem;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+  }
