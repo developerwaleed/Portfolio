@@ -62,10 +62,11 @@ header {
 }
 
 #landingtext2 {
-  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
   height: 20rem;
-  margin-top: 5rem;
-  margin-left: 2.5rem;
+  margin-top: 3rem;
 }
 
 .connect {
@@ -73,7 +74,7 @@ header {
   color: #36b37e;
   display: flex;
   margin-left: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   height: 2rem;
   width: 12rem;
   border: none;
@@ -88,7 +89,12 @@ header {
 
 .social-media-icons {
   display: flex;
+  -ms-flex-align: end;
   list-style-type: none;
   justify-content: center;
   gap: 10px 30px;
+}
+
+.social-media {
+  margin-top: -2.75rem;
 }
