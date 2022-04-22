@@ -98,7 +98,8 @@ header {
   list-style-type: none;
   justify-content: center;
   gap: 10px 30px;
-  align-items: flex-end;
+
+  /* align-items: flex-end; */
 }
 
 .social-media {
@@ -114,7 +115,7 @@ header {
 
 .arrow {
   height: 3rem;
-  margin-top: 10rem;
+  margin-top: 1rem;
 
   /* margin-left: 4.2rem; */
 }
@@ -131,46 +132,60 @@ header {
 }
 
 .card-holder {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-rows: auto;
+  padding: 40px;
   align-items: center;
+  row-gap: 20px;
+
+  /* justify-content: space-around; */
 }
 
 .card-holder-item {
-  height: 65vh;
-  width: 80vw;
-  margin: 15px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 10px;
-  column-gap: 50px;
+  align-items: space-between;
+
+  /* height: 60vh;
+
+  width: 80vw;
+
+  margin: 15px; */
+
+  /* column-gap: 50px; */
 }
 
 .holder-image {
   height: 32vh;
   width: 80vw;
-  background-color: #d0d9d4;
+  background-color: #ebf0ee;
   border-radius: 10px;
 }
 
 .holder-discription {
   display: flex;
   flex-direction: column;
-  margin-left: 5px;
-  margin-right: 5px;
+
+  /* margin-left: 5px;
+  margin-right: 5px; */
 }
 
 .holder-title {
-  font-size: 24px;
+  font-size: 30px;
   color: #3a4a42;
-  padding: 20px;
   text-align: center;
+
+  /* align-items: stretch; */
+  padding: 20px;
 }
 
 .tag {
   display: flex;
   justify-content: space-around;
   gap: 5px;
+  padding: 0 15px;
 }
 
 .tag > * {
@@ -189,18 +204,6 @@ header {
   flex: 1;
 }
 
-#first-item {
-  flex: 2;
-}
-
-#second-item {
-  flex: 1;
-}
-
-#third-item {
-  flex: 2;
-}
-
 .btn {
   align-self: center;
   height: 40px;
@@ -211,11 +214,12 @@ header {
   border: none;
   border-radius: 5px;
   font-size: 15px;
+  margin-bottom: 20px;
   transition: ease-in 0.1s;
 }
 
 .btn:hover {
-  box-shadow: 1px 8px 95px #36b37e;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .btn:focus {
@@ -234,7 +238,9 @@ header {
   background-image: url(./icons/About1.svg), url(./icons/About2.svg);
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: top -5px left 100%;
+
+  /* background-position: top -15px left 100%; */
+  background-position: top -20px right, bottom 20px left;
 }
 
 .about-me-body {
@@ -264,6 +270,14 @@ header {
   justify-content: center;
 }
 
+.btn-2:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.btn-2:focus {
+  background-color: #008552;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -274,7 +288,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #ebf0ee;
-  height: 50vh;
+  height: 40vh;
   width: 80vw;
   margin: 15px;
   border: 1px solid #d0d9d4;
