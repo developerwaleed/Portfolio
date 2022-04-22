@@ -132,11 +132,10 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 10px solid red;
+
 }
-.card-holder-item{
-  
-  height: 60vh; 
+.card-holder-item {
+  height: 65vh; 
   width: 80vw;
   margin: 15px;
   border: 1px solid #D0D9D4;
@@ -144,6 +143,72 @@ header {
   column-gap: 50px ;
 }
 
-.holder-image{
-  background-color: black;
+.holder-image {
+  height:32vh;
+  width:80vw;
+  background-color: #D0D9D4;
+  border-radius: 10px;
+}
+.holder-discription {
+  display:flex;
+  flex-direction: column;
+  
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.holder-title {
+  font-size: 24px;
+  color: #3A4A42;
+  padding: 20px;
+  text-align: center;
+}
+.tag {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+.tag > * {
+  font-size: 10px;
+  font-weight: bold;
+  color: #3A4A42;
+  align-items: center;
+}
+.tag-item {
+
+  background-color: #EBF0EE;
+  border-radius: 5px;
+  padding: 5px;
+  
+  text-align: center;
+  list-style: none;
+  flex:1;
+}
+#first-item{
+  flex:2;
+}
+#second-item{
+  flex:1;
+}
+#third-item{
+  flex:2;
+}
+
+.btn { 
+  align-self: center;
+  height: 40px;
+  width: 100px;
+  margin-top: 30px;
+  background-color: #36b37e;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: ease-in 0.1s;
+}
+.btn:hover {
+  box-shadow: 1px 8px 95px #36b37e;
+}
+.btn:focus {
+  background-color: #008552;
 }
