@@ -5,7 +5,7 @@
 }
 
 .container {
-  height: 100vh;
+  max-height: 100vh;
   max-width: 100vw;
 }
 
@@ -16,7 +16,7 @@ header {
 .nav-bar {
   display: flex;
   width: 100vw;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
 }
 
@@ -28,11 +28,13 @@ header {
   /* margin-top: 10px; */
 
   margin-left: 2rem;
+  flex-grow: 1;
 
   /* font-size: 1.5rem; */
 }
 
 .nav-bar-item {
+  
   margin: 2px;
 }
 
@@ -45,6 +47,9 @@ header {
   color: #172b4d;
   font-size: 1.5rem;
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 #landingtext {
@@ -59,17 +64,19 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 
 #landingtext2 {
-  display: flex;
-  flex-direction: column;
-  width: 98vw;
+  width: 90vw;
   height: 20rem;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
+  margin-left: 1.5rem;
+  
+  
 }
 
-.connect {
+/* .connect {
   font-family: 'Inter', sans-serif;
   color: #36b37e;
   display: flex;
@@ -81,15 +88,14 @@ header {
   background: none;
   font-size: 1.5rem;
   transition: ease-out 1s;
-}
+} */
 
-.connect:hover {
+/* .connect:hover {
   color: #172b4d;
-}
+} */
 
 .social-media-icons {
   display: flex;
-  -ms-flex-align: end;
   list-style-type: none;
   justify-content: center;
   gap: 10px 30px;
@@ -97,4 +103,47 @@ header {
 
 .social-media {
   margin-top: -2.75rem;
+}
+
+.container2{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+.arrow {
+  height: 3rem;
+  /* margin-top: -3rem;
+  margin-left: 4.2rem; */
+  
+}
+
+#main-heading{
+  margin-top: 2rem;
+  text-align: center;
+  color:#172b4d;
+}
+
+#indicator{
+  margin-top: 1rem;
+}
+.card-holder{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 10px solid red;
+}
+.card-holder-item{
+  
+  height: 60vh; 
+  width: 80vw;
+  margin: 15px;
+  border: 1px solid #D0D9D4;
+  border-radius: 10px;
+  column-gap: 50px ;
+}
+
+.holder-image{
+  background-color: black;
 }
