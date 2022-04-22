@@ -4,6 +4,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-height: 100vh;
   max-width: 100vw;
@@ -34,7 +38,6 @@ header {
 }
 
 .nav-bar-item {
-  
   margin: 2px;
 }
 
@@ -49,7 +52,6 @@ header {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  
 }
 
 #landingtext {
@@ -64,16 +66,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
 }
 
 #landingtext2 {
   width: 90vw;
   height: 20rem;
-  margin-top: 3.5rem;
-  margin-left: 1.5rem;
-  
-  
+  padding: 15px 10px;
+  line-height: 32px;
 }
 
 /* .connect {
@@ -99,102 +98,110 @@ header {
   list-style-type: none;
   justify-content: center;
   gap: 10px 30px;
+  align-items: flex-end;
 }
 
 .social-media {
-  margin-top: -2.75rem;
+  /* margin-top: -2.75rem; */
 }
 
-.container2{
+.container2 {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   justify-items: center;
 }
+
 .arrow {
   height: 3rem;
-  /* margin-top: -3rem;
-  margin-left: 4.2rem; */
-  
+  margin-top: 10rem;
+
+  /* margin-left: 4.2rem; */
 }
 
-#main-heading{
+#main-heading {
   margin-top: 2rem;
   text-align: center;
-  color:#172b4d;
+  color: #172b4d;
+  font-size: 30px;
 }
 
-#indicator{
+#indicator {
   margin-top: 1rem;
 }
-.card-holder{
+
+.card-holder {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
 }
+
 .card-holder-item {
-  height: 65vh; 
+  height: 65vh;
   width: 80vw;
   margin: 15px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 10px;
-  column-gap: 50px ;
+  column-gap: 50px;
 }
 
 .holder-image {
-  height:32vh;
-  width:80vw;
-  background-color: #D0D9D4;
+  height: 32vh;
+  width: 80vw;
+  background-color: #d0d9d4;
   border-radius: 10px;
 }
+
 .holder-discription {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  
   margin-left: 5px;
   margin-right: 5px;
 }
 
 .holder-title {
   font-size: 24px;
-  color: #3A4A42;
+  color: #3a4a42;
   padding: 20px;
   text-align: center;
 }
+
 .tag {
   display: flex;
   justify-content: space-around;
   gap: 5px;
 }
+
 .tag > * {
   font-size: 10px;
   font-weight: bold;
-  color: #3A4A42;
+  color: #3a4a42;
   align-items: center;
 }
-.tag-item {
 
-  background-color: #EBF0EE;
+.tag-item {
+  background-color: #ebf0ee;
   border-radius: 5px;
   padding: 5px;
-  
   text-align: center;
   list-style: none;
-  flex:1;
-}
-#first-item{
-  flex:2;
-}
-#second-item{
-  flex:1;
-}
-#third-item{
-  flex:2;
+  flex: 1;
 }
 
-.btn { 
+#first-item {
+  flex: 2;
+}
+
+#second-item {
+  flex: 1;
+}
+
+#third-item {
+  flex: 2;
+}
+
+.btn {
   align-self: center;
   height: 40px;
   width: 100px;
@@ -206,9 +213,112 @@ header {
   font-size: 15px;
   transition: ease-in 0.1s;
 }
+
 .btn:hover {
   box-shadow: 1px 8px 95px #36b37e;
 }
+
 .btn:focus {
   background-color: #008552;
+}
+
+#title {
+  text-align: center;
+  color: #172b4d;
+}
+
+.about-me {
+  padding: 40px 5px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./icons/About1.svg), url(./icons/About2.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top -5px left 100%;
+}
+
+.about-me-body {
+  padding: 30px 10px;
+  padding-bottom: 0;
+  text-align: center;
+  color: #42526e;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.btn-2 {
+  align-self: center;
+  height: 40px;
+  width: 150px;
+  margin-top: 30px;
+  background-color: #36b37e;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: ease-in 0.1s;
+}
+
+#btn-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skils-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebf0ee;
+  height: 50vh;
+  width: 80vw;
+  margin: 15px;
+  border: 1px solid #d0d9d4;
+  border-radius: 10px;
+  column-gap: 50px;
+}
+
+.icon {
+  align-self: center;
+}
+
+.title {
+  text-align: center;
+  color: #344563;
+  font-size: 10px;
+}
+
+.discription {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.skills-tag {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  padding: 25px;
+  flex-wrap: wrap;
+}
+
+.skillstag-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+  flex: 1;
+}
+
+.skills-tag > * {
+  font-size: 10px;
+  font-weight: bold;
+  color: #36b37e;
+  align-items: center;
 }
