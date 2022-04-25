@@ -214,6 +214,7 @@ header {
   font-weight: bold;
   color: #3a4a42;
   align-items: center;
+  margin: 10px;
 }
 
 .tag-item {
@@ -223,6 +224,7 @@ header {
   text-align: center;
   list-style: none;
   float: left;
+  padding: 10px;
 }
 
 .btn {
