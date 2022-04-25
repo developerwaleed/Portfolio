@@ -181,7 +181,7 @@ header {
   padding: 20px;
 }
 
-.tag {
+/*.tag {
   display: flex;
   justify-content: space-around;
   gap: 5px;
@@ -202,6 +202,27 @@ header {
   text-align: center;
   list-style: none;
   flex: 1;
+}*/
+.tag {
+  justify-content: space-around;
+  gap: 5px;
+  padding: 0 15px;
+}
+
+.tag > * {
+  font-size: 10px;
+  font-weight: bold;
+  color: #3a4a42;
+  align-items: center;
+}
+
+.tag-item {
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  list-style: none;
+  float: left;
 }
 
 .btn {
