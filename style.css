@@ -9,8 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Main Conatiner */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -150,7 +148,8 @@ header {
   list-style: none;
   flex: 1;
 }
-.tag>*{
+
+.tag > * {
   font-size: 10px;
   font-weight: bold;
   color: #3a4a42;
