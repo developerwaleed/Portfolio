@@ -9,6 +9,8 @@ body {
   overflow-x: hidden;
 }
 
+/* Main Conatiner */
+
 .container {
   display: flex;
   flex-direction: column;
