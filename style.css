@@ -133,7 +133,7 @@ header {
   padding: 20px;
 }
 
-.tag {
+/*.tag {
   display: flex;
   justify-content: space-around;
   gap: 5px;
@@ -150,7 +150,6 @@ header {
   font-size: 10px;
   font-weight: bold;
   color: #3a4a42;
-}
 
 .btn {
   align-self: center;
