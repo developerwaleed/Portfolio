@@ -3,13 +3,18 @@ Portfolio: setup and mobile version skeleton
 > A mobile version of Responsive Portfolio.
 > The units like rem, em ,vh ,vw are used to make the website responsive.
 > This is the basic skeleton of mobile version Full version of it coming soon...
-Edit: 
+MileStone2: 
 The Fetures added to the project are:
 > Social icons are now clickable.
 > Added image place holders.
 > Added About me Section.
 > Added Skills Section.
 
+MileStone 3:
+> Footer Added.
+> Styling Done.
+> Added Form.
+> All the fonts, colors and design is from "FIGMA TEMPLATE 3".
 
 ## Built With
 
