@@ -296,6 +296,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(./icons/footer.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 280px right;
 }
 
 #footer-text {
