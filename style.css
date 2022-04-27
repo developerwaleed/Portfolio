@@ -2,52 +2,43 @@
   padding: 0%;
   margin: 0%;
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   overflow-x: hidden;
-}
-
-.container {
-  max-height: 100vh;
-  max-width: 100vw;
+  list-style: none;
+  text-decoration: none;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 header {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .nav-bar {
   display: flex;
   width: 100vw;
-  justify-content: space-around;
   align-items: baseline;
-}
-
-.logo {
-  margin-left: 2rem;
-  flex-grow: 1;
 }
 
 .nav-bar-item {
   margin: 2px;
 }
 
+.logo {
+  margin-left: 1rem;
+  flex-grow: 1;
+}
+
 .menu {
   margin-right: 2rem;
 }
 
-.landing-text {
-  text-align: center;
-  color: #172b4d;
-  font-size: 1.5rem;
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#landingtext {
-  color: #36b37e;
+.nav-element {
+  list-style-type: none;
+  display: none;
 }
 
 .landing-section {
@@ -56,15 +47,24 @@ header {
   width: 100vw;
   background-image: url(./icons/BG.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
+.landing-section section {
+  text-align: center;
+  color: #172b4d;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  height: 40vh;
+}
+
 #landingtext2 {
-  width: 90vw;
+  width: auto;
   height: 20rem;
-  padding: 15px 10px;
+  padding: 20px 30px;
   line-height: 32px;
+  text-align: center;
 }
 
 .social-media-icons {
@@ -78,6 +78,16 @@ header {
   align-self: baseline;
 }
 
+#landingtext {
+  color: #36b37e;
+}
+
+#title-head {
+  margin: auto auto;
+  text-align: center;
+  width: 300px;
+}
+
 .container2 {
   display: grid;
   grid-template-columns: auto;
@@ -87,11 +97,12 @@ header {
 
 .arrow {
   height: 3rem;
-  margin-top: 1rem;
+  margin-top: 9rem;
 }
 
 #main-heading {
-  margin-top: 2rem;
+  width: 10rem;
+  margin: 2rem auto;
   text-align: center;
   color: #172b4d;
   font-size: 30px;
@@ -112,6 +123,8 @@ header {
 
 .card-holder-item {
   display: flex;
+  width: 369px;
+  height: 474px;
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 10px;
@@ -119,8 +132,8 @@ header {
 }
 
 .holder-image {
-  height: 32vh;
-  width: 80vw;
+  width: 368px;
+  height: 474px;
   background-color: #ebf0ee;
   border-radius: 10px;
 }
@@ -293,7 +306,7 @@ header {
 
 footer {
   margin-top: 50px;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,7 +325,7 @@ footer {
   color: #172b4d;
 }
 
-form {
+.mobile-form {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -366,4 +379,172 @@ form label textarea {
   font-size: 20px;
   font-weight: 700;
   color: black;
+}
+
+.desktop-form {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-element {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .container {
+    background-image: url(./icons/desktop-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: auto;
+  }
+
+  .landing-section {
+    background-image: none;
+    height: 125vh;
+  }
+
+  #title-head {
+    margin: auto auto;
+    text-align: center;
+    width: 500px;
+  }
+
+  #landingtext2 {
+    margin: auto auto;
+    width: 900px;
+    height: 9rem;
+  }
+
+  .landing-section section {
+    margin-top: 220px;
+  }
+
+  .arrow {
+    margin-top: 4rem;
+  }
+
+  #indicator {
+    display: none;
+  }
+
+  .card-holder {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .about-me-body {
+    margin: auto auto;
+    width: 950px;
+  }
+
+  .about-me {
+    padding-top: 100px;
+    background-image: url(./icons/right-about-desk.svg), url(./icons/left-about-desk.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top -20px right, bottom 20px left;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    align-items: center;
+    row-gap: 20px;
+    justify-items: center;
+  }
+
+  .skils-container {
+    width: 369px;
+    height: 352px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 100px;
+    margin: auto auto;
+    background-image: url(./icons/desk-f1.svg), url(./icons/desk-f2.svg), url(./icons/desk-f3.svg);
+    background-position: bottom 100px left, bottom 100px left 300px, bottom 100px right;
+    background-size: 150px;
+  }
+
+  #footer-text {
+    margin-left: 50px;
+    margin-top: 80px;
+    width: 1003px;
+    height: 256px;
+    font-size: 30px;
+    font-style: bold;
+    text-align: justify;
+    line-height: 143%;
+    text-justify: inter-word;
+  }
+
+  .mobile-form {
+    display: none;
+  }
+
+  .desktop-form {
+    max-width: 100%;
+    display: inline-block;
+    flex-direction: row;
+    margin-right: 98px;
+    width: 100%;
+  }
+
+  #footer-desk-btn {
+    margin-right: 391px;
+  }
+
+  .desktop-form label input {
+    width: 340px;
+    height: 48px;
+    border: 1px solid #d0d9d4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  #desk-email {
+    width: 685px;
+    height: 48px;
+  }
+
+  .desktop-form label textarea {
+    width: 685px;
+    height: 80px;
+    border: 1px solid #d0d9d4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  #email {
+    display: none;
+  }
+
+  .inner-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: 330px;
+  }
+
+  #foot-ind {
+    margin-top: 200px;
+  }
 }
