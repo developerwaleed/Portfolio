@@ -107,6 +107,7 @@ header {
   padding: 40px;
   align-items: center;
   row-gap: 20px;
+  justify-items: center;
 }
 
 .card-holder-item {
