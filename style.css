@@ -419,10 +419,14 @@ form label textarea {
     background: #36b37e;
     height: 3px;
     transition: 0.3s;
-  }   
+  }
 
   .nav-element a:hover::after {
     width: 100%;
+  }
+
+  .social-media-icons a {
+    transition: all 0.1s ease-in;
   }
 
   .nav-element a:hover {
@@ -430,13 +434,8 @@ form label textarea {
     font-weight: 550;
   }
 
-  .social-media-icons a {
-    transition: all 0.1s ease-in;
-  }
-
   .social-media-icons a:hover {
     padding: 5px 5px;
-    
   }
 
   .container {
@@ -470,6 +469,11 @@ form label textarea {
 
   .arrow {
     margin-top: 4rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .arrow:hover {
+    transform: translate(0, 25px);
   }
 
   #indicator {
