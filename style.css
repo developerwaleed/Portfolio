@@ -470,6 +470,11 @@ form label textarea {
 
   .arrow {
     margin-top: 4rem;
+    transition : all 0.5s ease-in-out;
+  }
+
+  .arrow:hover {
+    transform: translate(0,25px);
   }
 
   #indicator {
