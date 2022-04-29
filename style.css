@@ -123,8 +123,8 @@ header {
 
 .card-holder-item {
   display: flex;
-  width: 369px;
-  height: 474px;
+  max-width: 369px;
+  max-height: 474px;
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 10px;
@@ -395,11 +395,48 @@ form label textarea {
   }
 
   .nav-element {
-    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin: 20px auto;
+  }
+
+  .nav-element a {
+    position: relative;
+    text-decoration: none;
+    color: #172b4d;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .nav-element a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    background: #36b37e;
+    height: 3px;
+    transition: 0.3s;
+  }   
+
+  .nav-element a:hover::after {
+    width: 100%;
+  }
+
+  .nav-element a:hover {
+    color: #36b37e;
+    font-weight: 550;
+  }
+
+  .social-media-icons a {
+    transition: all 0.1s ease-in;
+  }
+
+  .social-media-icons a:hover {
+    padding: 5px 5px;
+    
   }
 
   .container {
@@ -433,6 +470,11 @@ form label textarea {
 
   .arrow {
     margin-top: 4rem;
+    transition : all 0.5s ease-in-out;
+  }
+
+  .arrow:hover {
+    transform: translate(0,25px);
   }
 
   #indicator {
