@@ -1,8 +1,9 @@
-Portfolio: setup and mobile version skeleton
+Portfolio: 
 
-> A mobile version of Responsive Portfolio.
-> The units like rem, em ,vh ,vw are used to make the website responsive.
-> This is the basic skeleton of mobile version Full version of it coming soon...
+MileStone 1:
+>Portfolio for Mobile Version.
+>Its responsive
+
 MileStone2: 
 The Fetures added to the project are:
 > Social icons are now clickable.
@@ -16,6 +17,9 @@ MileStone 3:
 > Added Form.
 > All the fonts, colors and design is from "FIGMA TEMPLATE 3".
 
+Milestone 4:
+>Added Transitions to the Buttons, Arrows, Social media icons
+
 ## Built With
 
 - HTML, CSS
@@ -24,7 +28,7 @@ MileStone 3:
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](caasperr.github.io)
 
 
 ## Getting Started
@@ -48,8 +52,7 @@ Can be used to make your own portfolio using my template.
 👤 **Waleed Amjad**
 
 - GitHub: [@githubhandle](https://github.com/caasperr)
-
-
+-TwitterL [@developerwaleed] (https://twitter.com/developerwaleed)
 
 ## Show your support
 
