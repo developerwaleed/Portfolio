@@ -3,6 +3,7 @@ Portfolio:
 MileStone 1:
 >Portfolio for Mobile Version.
 >Its responsive
+>The units like rem, em, vh ,vw are used.
 
 MileStone2: 
 The Fetures added to the project are:
