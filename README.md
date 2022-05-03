@@ -3,6 +3,8 @@ Portfolio:
 MileStone 1:
 >Portfolio for Mobile Version.
 >Its responsive
+>The units like rem, em, vh ,vw are used.
+
 
 MileStone2: 
 The Fetures added to the project are:
@@ -31,7 +33,8 @@ Milestone 5:
 
 ## Live Demo (if available)
 
-[Live Demo Link](caasperr.github.io)
+[Live Demo Link](https://caasperr.github.io/Portfolio/)
+
 
 
 ## Getting Started

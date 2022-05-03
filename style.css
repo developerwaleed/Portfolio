@@ -421,8 +421,6 @@ form label textarea {
     transition: 0.3s;
   }
 
-  /* Transitions on NavBar */
-
   .nav-element a:hover::after {
     width: 100%;
   }
