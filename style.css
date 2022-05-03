@@ -79,7 +79,7 @@ header {
 }
 
 #landingtext {
-  color: #36b37e;
+  color: #2a8660;
 }
 
 #title-head {
@@ -144,7 +144,7 @@ header {
 }
 
 .holder-title {
-  font-size: 30px;
+  font-size: 20px;
   color: #3a4a42;
   text-align: center;
   padding: 20px;
@@ -178,7 +178,7 @@ header {
   height: 40px;
   width: 100px;
   margin-top: 30px;
-  background-color: #36b37e;
+  background-color: #22795b;
   color: aliceblue;
   border: none;
   border-radius: 5px;
@@ -224,7 +224,7 @@ header {
   height: 40px;
   width: 150px;
   margin-top: 30px;
-  background-color: #36b37e;
+  background-color: #22795b;
   color: aliceblue;
   border: none;
   border-radius: 5px;
@@ -300,7 +300,7 @@ header {
 .skills-tag > * {
   font-size: 10px;
   font-weight: bold;
-  color: #36b37e;
+  color: #29765b;
   align-items: center;
 }
 
@@ -526,13 +526,11 @@ form label textarea {
   #footer-text {
     margin-left: 50px;
     margin-top: 80px;
-    width: 1003px;
-    height: 256px;
+    width: 50rem;
+    height: 10rem;
     font-size: 30px;
-    font-style: bold;
-    text-align: justify;
+    text-align: center;
     line-height: 143%;
-    text-justify: inter-word;
   }
 
   .mobile-form {
