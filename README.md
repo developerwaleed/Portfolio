@@ -5,6 +5,7 @@ MileStone 1:
 >Its responsive
 >The units like rem, em, vh ,vw are used.
 
+
 MileStone2: 
 The Fetures added to the project are:
 > Social icons are now clickable.
@@ -21,6 +22,9 @@ MileStone 3:
 Milestone 4:
 >Added Transitions to the Buttons, Arrows, Social media icons
 
+Milestone 5:
+>Fix Accessabilty Issues.
+
 ## Built With
 
 - HTML, CSS
@@ -30,6 +34,7 @@ Milestone 4:
 ## Live Demo (if available)
 
 [Live Demo Link](https://caasperr.github.io/Portfolio/)
+
 
 
 ## Getting Started
