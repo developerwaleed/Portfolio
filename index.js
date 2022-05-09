@@ -7,15 +7,16 @@ hamburger.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", close);
 menuItems.forEach(menuItem => menuItem.addEventListener('click', close))
 
-function openMenu() { 
-    navbar.style.display = "flex";
-    hamburger.style.display = "none";
-    closeBtn.style.display = "flex";
+function openMenu() {
+  navbar.style.display = 'flex';
+  hamburger.style.display = 'none';
+  closeBtn.style.display = 'flex';
 }
 
 function close() {
-    navbar.style.display = "none";
-    hamburger.style.display = "flex";
-    closeBtn.style.display = "none";
+
+  navbar.style.display = 'none';S
+  hamburger.style.display = 'flex';
+  closeBtn.style.display = "none";
 
 }

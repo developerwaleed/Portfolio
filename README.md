@@ -23,6 +23,11 @@ Milestone 4:
 Milestone 5:
 >Fix Accessabilty Issues.
 
+MileStone 7: Mobile-Menu
+
+>Add Close Button.
+Add Events to buttons.
+
 ## Built With
 
 - HTML, CSS
