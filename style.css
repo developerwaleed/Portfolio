@@ -36,9 +36,33 @@ header {
   margin-right: 2rem;
 }
 
-.nav-element {
-  list-style-type: none;
+#close {
   display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-element {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-element a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 30px;
+  font-weight: 550;
+  margin-left: 40px;
+}
+
+.nav-element li {
+  margin-top: 40px;
 }
 
 .landing-section {
@@ -128,7 +152,6 @@ header {
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 10px;
-  align-items: space-between;
 }
 
 .holder-image {
@@ -370,7 +393,6 @@ form label textarea {
   height: 30vh;
   text-align: center;
   font-weight: 400;
-  size: 20px;
   color: #42526e;
 }
 
@@ -392,14 +414,6 @@ form label textarea {
 
   .menu {
     display: none;
-  }
-
-  .nav-element {
-    max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 20px auto;
   }
 
   .nav-element a {

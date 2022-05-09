@@ -18,15 +18,16 @@
                     <a href="#"><img class="logo" src="./icons/logo.svg" alt="Logo" height="30" width="100"></a>
                 </div>
                 <div class="nav-bar-item">
-
-                    <img class="menu" src="./icons/menu.png" alt="icon-menu" height="25" width="25">
+                    <img id="humburger" class="menu" src="./icons/menu.png" alt="icon-menu" height="25" width="25">
+                    <img class="menu" src="icons/close.png" alt="closing icon" id="close">
 
                 </div>
-                <ul class="nav-element">
-                    <li><a href="#">Portoflio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="menu-Elements" class="nav-element">
+                    <li><a class="menu-item" href="#Portofolio">Portoflio</a></li>
+                    <li><a class="menu-item" href="#About">About</a></li>
+                    <li><a class="menu-item" href="#Contact">Contact</a></li>
                 </ul>
+
             </nav>
         </header>
 
@@ -62,7 +63,7 @@
             </section>
         </div>
     </div>
-    <section class="container2">
+    <section id="Portofolio" class="container2">
         <h2 id="main-heading">My Recent WORKS</h2>
         <img id="indicator" src="./icons/Indicator.svg" alt="indicator">
     </section>
@@ -252,7 +253,7 @@
 
     </div>
 
-    <section class="about-me">
+    <section id="About" class="about-me">
 
         <div id="title">
             <h2>About me</h2>
@@ -358,7 +359,7 @@
 
 
 
-    <footer>
+    <footer id="Contact">
         <div class="inner-footer">
                 <p id="footer-text">
                     I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -419,6 +420,7 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
