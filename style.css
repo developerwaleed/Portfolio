@@ -51,21 +51,19 @@ header {
   position: fixed;
   list-style: none;
   text-decoration: none;
-
 }
 
 .nav-element a {
   text-decoration: none;
-  color : #3A4A42;
+  color: #3a4a42;
   font-size: 30px;
   font-weight: 550;
   margin-left: 40px;
-  
 }
+
 .nav-element li {
   margin-top: 40px;
 }
-
 
 .landing-section {
   display: inline-block;
@@ -154,7 +152,6 @@ header {
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 10px;
-  align-items: space-between;
 }
 
 .holder-image {
@@ -396,7 +393,6 @@ form label textarea {
   height: 30vh;
   text-align: center;
   font-weight: 400;
-  size: 20px;
   color: #42526e;
 }
 
