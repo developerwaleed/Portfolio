@@ -18,4 +18,4 @@ function close() {
 }
 
 closeBtn.addEventListener('click', close);
-menuItems.forEach((menuItem) => {menuItem.addEventListener('click', close)});
+menuItems.forEach((menuItem) => { menuItem.addEventListener('click', close); });
