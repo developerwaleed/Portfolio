@@ -416,6 +416,14 @@ form label textarea {
     display: none;
   }
 
+  .nav-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 0;
+    position: static;
+  }
+
   .nav-element a {
     position: relative;
     text-decoration: none;
