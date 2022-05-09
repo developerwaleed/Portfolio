@@ -1,12 +1,14 @@
 const hamburger = document.getElementById('humburger1');
+const closeBtn = document.getElementById('close');
 const navbar = document.querySelector("#menu-Elements");
 
 hamburger.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", close);
 
 function openMenu() { 
-    console.log("clicled");
     navbar.style.display = "flex";
-    // navbar.style.top = 0;
 }
 
-
+function close() {
+    navbar.style.display = "none";
+}
