@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   list-style: none;
   text-decoration: none;
   max-height: 100%;
@@ -221,6 +221,107 @@ header {
 #title {
   text-align: center;
   color: #172b4d;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  height: auto;
+  max-height: 92vh;
+  max-width: 80vw;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  z-index: 10;
+  padding: 10px 15px;
+  overflow-y: scroll;
+  align-items: center;
+  transition: 200ms ease-in-out;
+}
+
+.modal.active {
+  transform: translate(-50%,-50%) scale(1);
+}
+
+.closebtn {
+  cursor: pointer;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 20px;
+  float: right;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.modal-title {
+color: #172b4d;
+ padding: 15px 0;
+ font-size: 30px;
+ font-weight: 400;
+}
+
+.modal-discription {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 250px;
+  padding: 15px 0;
+  overflow-y: scroll; 
+}
+
+.modal-btn-div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.modal-btn{
+  height: 48px;
+  width: 141px;
+  margin-top: 30px;
+  background-color: #22795b;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  transition: ease-in 0.1s;
+}
+
+.modal-btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+.modal-btn:focus {
+  background-color: #008552;
+}
+
+.modal-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+#overlay {
+  position: fixed;
+  background-color: #c1c7d0;
+  transition: 200ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+#overlay.active { 
+    pointer-events: all;
+    opacity: 1;
 }
 
 .about-me {
@@ -509,6 +610,118 @@ form label textarea {
   .about-me-body {
     margin: auto auto;
     width: 950px;
+  }
+
+  .desk-modal
+  {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    max-width: 55vw;
+    height: auto;
+    max-height: 92vh;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 10;
+    padding: 10px 15px;
+    overflow-y: scroll;
+    align-items: center;
+    transition: 200ms ease-in-out;
+  }
+  
+  .desk-modal.active {
+    transform: translate(-50%,-50%) scale(1);
+  }
+  
+  .deskclosebtn {
+    cursor: pointer;
+    float: right;
+    background: #EBECF0;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    color: #67798E;
+  }
+  
+  .Desk-modal-title {
+  color: #172b4d;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+   padding: 15px 0;
+   font-size: 20px;
+   font-weight: 400;
+  }
+  .deskmodal-header img {
+    margin-top: 5px;
+  }
+  
+  .Desk-modal-discription {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 250px;
+    padding: 15px 0;
+    color: #344563;
+  }
+  
+  .Desk-modal-btn-div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  
+  .Deskmodal-btn{
+    height: 48px;
+    width: 115px;
+    background-color: #22795b;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    transition: ease-in 0.1s;
+  }
+
+  .Deskmodal-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .Deskmodal:hover {
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+  .Deskmodal:focus {
+    background-color: #008552;
+  }
+  
+  .Deskmodal-btn a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #Deskoverlay {
+    position: fixed;
+    background-color: #c1c7d0;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+  }
+  
+  #Deskoverlay.deskmodal-headerdeskmodal-header { 
+      pointer-events: all;
+      opacity: .98;
   }
 
   .about-me {
