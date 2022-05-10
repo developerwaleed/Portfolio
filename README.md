@@ -30,6 +30,11 @@ MileStone 7: Mobile-Menu
 >Add Close Button.
 Add Events to buttons.
 
+MileStone 8: Add Modal
+
+>Add Modal for Mobile and For Desktop.
+>Add Projects Data to DOM dynamically using JavaScript.
+
 ## Built With
 
 - HTML, CSS
