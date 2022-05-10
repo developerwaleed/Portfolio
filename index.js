@@ -2,6 +2,7 @@ const hamburger = document.getElementById('humburger');
 const closeBtn = document.getElementById('close');
 const navbar = document.querySelector('#menu-Elements');
 const menuItems = document.querySelectorAll('.menu-item');
+const appearModel = document.getElementById('modal');
 
 function openMenu() {
   navbar.style.display = 'flex';
@@ -98,3 +99,10 @@ const projects = [
 let htmlProjects = projects.map((project,index) => generatProject(project,index)).join('');
 
 projectsContainer.innerHTML = htmlProjects;
+
+projects.forEach((project,index) => {
+  document.getElementById(`modal-btn-${index}`).addEventListener('click', () => 
+  {
+      appearModel.style.display = "flex";
+  })    
+});
