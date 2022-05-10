@@ -3,6 +3,8 @@ const closeBtn = document.getElementById('close');
 const navbar = document.querySelector('#menu-Elements');
 const menuItems = document.querySelectorAll('.menu-item');
 const appearModel = document.getElementById('modal');
+const deskModal = document.querySelector(".desk-modal");
+const deskOverlay = document.querySelector("#Deskoverlay");
 
 function openMenu() {
   navbar.style.display = 'flex';
@@ -104,5 +106,7 @@ projects.forEach((project,index) => {
   document.getElementById(`modal-btn-${index}`).addEventListener('click', () => 
   {
       appearModel.style.display = "flex";
+      deskModal.classList.add('active')
+      deskOverlay.classList.add('active')
   })    
 });

@@ -719,9 +719,9 @@ form label textarea {
     pointer-events: none;
   }
   
-  #Deskoverlay.deskmodal-headerdeskmodal-header { 
-      pointer-events: all;
-      opacity: .98;
+  #Deskoverlay.active { 
+    pointer-events: all;
+    opacity: .98;
   }
 
   .about-me {
