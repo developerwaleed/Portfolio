@@ -147,11 +147,11 @@ document.getElementById('closebtnDSK').addEventListener('click', () => {
 });
 
 form.addEventListener('submit', (event) => {
-  let a = false;
+  let validation = false;
   if (email.value === email.value.toLowerCase()) {
-    a = true;
+    validation = true;
   }
-  if (a === false) {
+  if (validation === false) {
     event.preventDefault();
     error.innerText = 'Email must be in Lower Case!';
   }
