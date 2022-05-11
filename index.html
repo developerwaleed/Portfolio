@@ -132,14 +132,14 @@
         </div>
         <div class="modal-btn-div">
             <button type="button" class="modal-btn">
-           <span>See Live</span> 
-            <img src="./icons/model-btn-icon1.svg" alt="social icon">
-                
+                <span>See Live</span>
+                <img src="./icons/model-btn-icon1.svg" alt="social icon">
+
             </button>
             <button type="button" class="modal-btn">
                 <span>See Source</span>
-                    <img src="./icons/model-btn-icon2.svg" alt="social icon2">
-                </button>
+                <img src="./icons/model-btn-icon2.svg" alt="social icon2">
+            </button>
         </div>
     </div>
     <div id="overlay"></div>
@@ -159,13 +159,13 @@
             <div class="Desk-modal-btn-div">
                 <button type="button" class="Deskmodal-btn">
                     <span>See Live</span>
-                        <img src="./icons/model-btn-icon1.svg" alt="social icon">
-                   
+                    <img src="./icons/model-btn-icon1.svg" alt="social icon">
+
                 </button>
                 <button type="button" class="Deskmodal-btn">
-                 <span>See Source</span>
-                        <img src="./icons/model-btn-icon2.svg" alt="social icon2">
-                 </button>
+                    <span>See Source</span>
+                    <img src="./icons/model-btn-icon2.svg" alt="social icon2">
+                </button>
             </div>
         </div>
         <div class="Desk-modal-body">
@@ -302,22 +302,37 @@
         <div class="inner-footer">
             <div id="footer-text">
 
-                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch. </p>
+                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                </p>
 
             </div>
-            <form class="mobile-form" action="https://formspree.io/f/mnqwodgq" method="post">
-                <label>
+            <form id="form" class="mobile-form" action="https://formspree.io/f/mnqwodgq" method="post">
+
+
+                <div class="field">
                     <input type="text" maxlength="30" name="user" placeholder="Full name" required>
-                </label>
-                <label>
-                    <input type="email" maxlength="30" name="email" placeholder="Email Address" required>
-                </label>
-                <label>
+                    <small></small>
+                </div>
+
+
+                <div class="field">
+                    <input type="email" id= "email" maxlength="30" name="email" placeholder="Email Address" required>
+                    <small></small>
+                </div class="field">
+
+                <div class="field">
                     <textarea maxlength="500" name="message" placeholder="Enter text here" required></textarea>
-                </label>
-                <button class="btn-2" type="submit">Get in Touch</button>
+                    <small></small>
+                </div>
+                <div class="field">
+                    <button class="btn-2" type="submit" id="submit">Get in Touch</button>
+                    <small id="errors"></small>
+                </div>
+
             </form>
-            <form class="desktop-form" action="https://formspree.io/f/mnqwodgq" method="post">
+
+            <!-- <form class="desktop-form" action="https://formspree.io/f/mnqwodgq" method="post">
+
                 <label>
                     <input type="text" maxlength="30" name="user" placeholder="First Name" required>
                 </label>
@@ -332,7 +347,7 @@
                     <textarea maxlength="500" name="message" placeholder="Typing Something" required></textarea>
                 </label>
                 <button class="btn-2" id="footer-desk-btn" type="submit">Get in Touch</button>
-            </form>
+            </form> -->
         </div>
         <div>
             <div>
