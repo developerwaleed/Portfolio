@@ -14,6 +14,10 @@ const MobOverlay = document.querySelector('#overlay');
 const Deskoverlay = document.querySelector('#Deskoverlay');
 const mediaQuery = window.matchMedia('(min-width: 768px)');
 
+// Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('errors');
 function openMenu() {
   navbar.style.display = 'flex';
   hamburger.style.display = 'none';
@@ -140,4 +144,15 @@ document.getElementById('closebtnDSK').addEventListener('click', () => {
   appearDeskModel.style.display = 'none';
   deskModal.classList.remove('active');
   Deskoverlay.classList.remove('active');
+});
+
+form.addEventListener('submit', (event) => {
+  let validation = false;
+  if (email.value === email.value.toLowerCase()) {
+    validation = true;
+  }
+  if (validation === false) {
+    event.preventDefault();
+    error.innerText = 'Email must be in Lower Case!';
+  }
 });
