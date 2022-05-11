@@ -14,7 +14,7 @@ const MobOverlay = document.querySelector('#overlay');
 const Deskoverlay = document.querySelector('#Deskoverlay');
 const mediaQuery = window.matchMedia('(min-width: 768px)');
 
-//Form Validation
+// Form Validation
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('errors');
@@ -146,3 +146,13 @@ document.getElementById('closebtnDSK').addEventListener('click', () => {
   Deskoverlay.classList.remove('active');
 });
 
+form.addEventListener('submit', (event) => {
+  let a = false;
+  if (email.value === email.value.toLowerCase()) {
+    a = true;
+  }
+  if (a === false) {
+    event.preventDefault();
+    error.innerText = 'Email must be in Lower Case!';
+  }
+});

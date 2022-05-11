@@ -477,11 +477,11 @@ footer {
   box-sizing: border-box;
   border-radius: 4px;
   margin-top: 20px;
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
-.field {
-  
+#errors {
+  color: #ff6163;
 }
 
 .btn-footer {
@@ -498,7 +498,7 @@ footer {
   margin-top: 30px;
 }
 
-#email {
+#emailfooter {
   margin-top: 20px;
   height: 30vh;
   text-align: center;
@@ -799,27 +799,27 @@ footer {
     margin-top: 20px;
     padding: 0 10px;
   }
-  
+
   .field textarea {
     width: 400px;
     height: 80px;
     border: 1px solid #d0d9d4;
     border-radius: 4px;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 10px;
+  }
+
+  .field button {
+    width: 155px;
+    margin-top: -10px;
+  }
+
+  #email {
+    margin-top: -4px;
   }
 
   #footer-desk-btn {
     margin-right: 391px;
-  }
-
-  #desk-email {
-    width: 685px;
-    height: 48px;
-  }
-
-  #email {
-    display: none;
   }
 
   .inner-footer {
