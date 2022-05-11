@@ -460,7 +460,7 @@ footer {
   margin-top: 50px;
 }
 
-form label input {
+.field input {
   width: 327px;
   height: 48px;
   border: 1px solid #d0d9d4;
@@ -470,7 +470,7 @@ form label input {
   padding: 0 10px;
 }
 
-form label textarea {
+.field textarea {
   width: 327px;
   height: 80px;
   border: 1px solid #d0d9d4;
@@ -478,6 +478,10 @@ form label textarea {
   border-radius: 4px;
   margin-top: 20px;
   padding: 0 10px;
+}
+
+.field {
+  
 }
 
 .btn-footer {
@@ -507,10 +511,6 @@ form label textarea {
   font-size: 20px;
   font-weight: 700;
   color: black;
-}
-
-.desktop-form {
-  display: none;
 }
 
 @media (min-width: 768px) {
@@ -786,44 +786,36 @@ form label textarea {
   }
 
   .mobile-form {
-    display: none;
-  }
-
-  .desktop-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
-    margin-right: 20px;
+  }
+
+  .field input {
+    width: 400px;
+    height: 40px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .field textarea {
+    width: 400px;
+    height: 80px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    margin-top: 0px;
+    padding: 10px;
   }
 
   #footer-desk-btn {
     margin-right: 391px;
   }
 
-  .desktop-form label input {
-    width: 340px;
-    height: 48px;
-    border: 1px solid #d0d9d4;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 20px;
-    padding: 0 10px;
-  }
-
   #desk-email {
     width: 685px;
     height: 48px;
-  }
-
-  .desktop-form label textarea {
-    width: 685px;
-    height: 80px;
-    border: 1px solid #d0d9d4;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 20px;
-    padding: 0 10px;
   }
 
   #email {

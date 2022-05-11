@@ -14,6 +14,10 @@ const MobOverlay = document.querySelector('#overlay');
 const Deskoverlay = document.querySelector('#Deskoverlay');
 const mediaQuery = window.matchMedia('(min-width: 768px)');
 
+//Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('errors');
 function openMenu() {
   navbar.style.display = 'flex';
   hamburger.style.display = 'none';
@@ -141,3 +145,4 @@ document.getElementById('closebtnDSK').addEventListener('click', () => {
   deskModal.classList.remove('active');
   Deskoverlay.classList.remove('active');
 });
+
