@@ -29,7 +29,15 @@ function close() {
 }
 
 closeBtn.addEventListener('click', close);
-menuItems.forEach((menuItem) => { menuItem.addEventListener('click', close); });
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    if (!mediaQuery.matches) {
+      navbar.style.display = 'none';
+      hamburger.style.display = 'flex';
+      closeBtn.style.display = 'none';
+    }
+  });
+});
 
 const projectsContainer = document.querySelector('.card-holder');
 

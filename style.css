@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   list-style: none;
   text-decoration: none;
   max-height: 100%;
@@ -526,15 +526,17 @@ form label textarea {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: -35px;
     height: 0;
     position: static;
+    margin-top: -15px;
   }
 
   .nav-element a {
     position: relative;
     text-decoration: none;
     color: #172b4d;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
@@ -568,20 +570,21 @@ form label textarea {
   }
 
   .social-media-icons a:hover {
-    padding: 5px 5px;
+    padding: 5px;
   }
 
   .container {
+    height: 100vh;
     background-image: url(./icons/desktop-bg.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 60em;
     background-position: top;
     text-align: center;
   }
 
   .landing-section {
     background-image: none;
-    height: 65rem;
+    height: 0;
   }
 
   #title-head {
@@ -590,14 +593,19 @@ form label textarea {
     width: 500px;
   }
 
+  #title-head > * {
+    font-size: 2rem;
+  }
+
   #landingtext2 {
-    margin: 3rem 0;
-    width: 60rem;
+    margin: 0.5rem 0;
+    width: 39rem;
     height: 9rem;
+    font-size: 1rem;
   }
 
   .landing-section section {
-    margin-top: 220px;
+    margin-top: 110px;
   }
 
   .arrow {
@@ -619,17 +627,20 @@ form label textarea {
 
   .about-me-body {
     margin: auto auto;
-    width: 950px;
+    padding: 0 0;
+    padding-bottom: 0;
+    text-align: center;
+    color: #42526e;
+    line-height: 32px;
+    font-size: 20px;
+    width: 55vw;
   }
 
   .desk-modal {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: auto;
-    max-width: 55vw;
-    height: auto;
-    max-height: 92vh;
+    max-height: 90vh;
     border-radius: 10px;
     position: fixed;
     top: 50%;
@@ -729,7 +740,7 @@ form label textarea {
   }
 
   .about-me {
-    padding-top: 100px;
+    padding-top: 70px;
     background-image: url(./icons/right-about-desk.svg), url(./icons/left-about-desk.svg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -747,8 +758,10 @@ form label textarea {
   }
 
   .skils-container {
-    width: 369px;
+    width: 300px;
+    max-width: 300px;
     height: 352px;
+    max-height: 352px;
   }
 
   footer {
@@ -756,18 +769,20 @@ form label textarea {
     gap: 100px;
     margin: auto auto;
     background-image: url(./icons/desk-f1.svg), url(./icons/desk-f2.svg), url(./icons/desk-f3.svg);
-    background-position: bottom 100px left, bottom 100px left 300px, bottom 100px right;
-    background-size: 150px;
+    background-position: bottom 100px left, bottom 50px left 300px, bottom 10px right;
+    background-size: 100px;
   }
 
   #footer-text {
-    margin-left: 50px;
-    margin-top: 80px;
-    width: 50rem;
-    height: 10rem;
-    font-size: 30px;
+    width: 40vw;
+    font-size: 20px;
+    margin-left: -50px;
     text-align: center;
-    line-height: 143%;
+  }
+
+  #footer-text p {
+    margin-left: 50px;
+    padding-top: 20px;
   }
 
   .mobile-form {
@@ -775,11 +790,11 @@ form label textarea {
   }
 
   .desktop-form {
-    max-width: 100%;
-    display: inline-block;
+    display: flex;
     flex-direction: row;
-    margin-right: 98px;
-    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-right: 20px;
   }
 
   #footer-desk-btn {
@@ -816,10 +831,8 @@ form label textarea {
   }
 
   .inner-footer {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    margin-left: 330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   #foot-ind {
