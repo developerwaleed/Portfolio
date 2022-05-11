@@ -5,7 +5,7 @@ const navbar = document.querySelector('#menu-Elements');
 // Adding Projects Dynamically
 const menuItems = document.querySelectorAll('.menu-item');
 
-// Adding Modal
+// Adding Modal JavaScript
 const appearMobileModel = document.getElementById('modal'); // Target using ID
 const appearDeskModel = document.getElementById('desk-modal'); // Target using ID
 const MobileModal = document.querySelector('.modal'); // Target using Class
