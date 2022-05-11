@@ -106,16 +106,3 @@ projects.forEach((project,index) => {
       appearModel.style.display = "flex";
   })    
 });
-
-form.addEventListener('submit', (event) => {
-  let a = false;
-  event.preventDefault();
-  console.log(email.value,email.value.toLowerCase());
-  if(email.value === email.value.toLowerCase()) {
-     a = true;
-  }
-  if(a===false)
-  {
-  error.innerText = 'Please Your Email Must be in Lower Case';
-  }
-} );
