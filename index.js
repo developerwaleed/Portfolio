@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const hamburger = document.getElementById('humburger');
 const closeBtn = document.getElementById('close');
 const navbar = document.querySelector('#menu-Elements');
@@ -18,6 +19,10 @@ const mediaQuery = window.matchMedia('(min-width: 768px)');
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('errors');
+
+// Passing Data to LocalStorage
+let formObj = {};
+
 function openMenu() {
   navbar.style.display = 'flex';
   hamburger.style.display = 'none';
@@ -156,3 +161,14 @@ form.addEventListener('submit', (event) => {
     error.innerText = 'Email must be in Lower Case!';
   }
 });
+
+// Populate LocalStrorage
+function populateStorage() {
+  formObj = {
+    Name: form.user.value,
+    Email: form.email.value,
+    Message: form.message.value,
+  };
+  const convertObj = JSON.stringify(formObj);
+  localStorage.setItem('FormData', convertObj);
+}
