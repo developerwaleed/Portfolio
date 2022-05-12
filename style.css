@@ -636,6 +636,8 @@ footer {
     width: 55vw;
   }
 
+  /* Style for desktop modal */
+
   .desk-modal {
     display: flex;
     flex-direction: column;
