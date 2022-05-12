@@ -172,3 +172,13 @@ function populateStorage() {
   const convertObj = JSON.stringify(formObj);
   localStorage.setItem('FormData', convertObj);
 }
+
+// Populate FormFields
+function getDataFromLocalStorage() {
+  let data = null;
+  data = localStorage.getItem('FormData');
+  data = JSON.parse(data);
+  form.user.value = data.Name;
+  form.email.value = data.Email;
+  form.message.value = data.Message;
+}
