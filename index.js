@@ -2,9 +2,10 @@
 const hamburger = document.getElementById('humburger');
 const closeBtn = document.getElementById('close');
 const navbar = document.querySelector('#menu-Elements');
+const menuItems = document.querySelectorAll('.menu-item');
 
 // Adding Projects Dynamically
-const menuItems = document.querySelectorAll('.menu-item');
+const projectsContainer = document.querySelector('.card-holder');
 
 // Adding Modal JavaScript
 const appearMobileModel = document.getElementById('modal'); // Target using ID
@@ -37,6 +38,7 @@ function close() {
   closeBtn.style.display = 'none';
 }
 
+// Close the Mobile Menu
 closeBtn.addEventListener('click', close);
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', () => {
@@ -48,8 +50,7 @@ menuItems.forEach((menuItem) => {
   });
 });
 
-const projectsContainer = document.querySelector('.card-holder');
-
+// Generates the Projects in DOM
 function generatProject({ name, image, technologies }, index) {
   return `
   <div class="card-holder-item">
@@ -70,6 +71,7 @@ function generatProject({ name, image, technologies }, index) {
   `;
 }
 
+// Object to Pass For generating Projects in DOM
 const projects = [
   {
     name: 'Project One',
@@ -125,6 +127,7 @@ const htmlProjects = projects.map((project, index) => generatProject(project, in
 
 projectsContainer.innerHTML = htmlProjects;
 
+// Iterates to input all the projects
 projects.forEach((project, index) => {
   document.getElementById(`modal-btn-${index}`).addEventListener('click', () => {
     if (mediaQuery.matches) {
@@ -139,18 +142,7 @@ projects.forEach((project, index) => {
   });
 });
 
-document.getElementById('close-mobile-btn').addEventListener('click', () => {
-  appearMobileModel.style.display = 'none';
-  MobileModal.classList.remove('active');
-  MobOverlay.classList.remove('active');
-});
-
-document.getElementById('closebtnDSK').addEventListener('click', () => {
-  appearDeskModel.style.display = 'none';
-  deskModal.classList.remove('active');
-  Deskoverlay.classList.remove('active');
-});
-
+// Code to Validate Form
 form.addEventListener('submit', (event) => {
   let validation = false;
   if (email.value === email.value.toLowerCase()) {
