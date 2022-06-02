@@ -1,76 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Waleeds Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <nav class="nav-bar">
-                <div class="nav-bar-item logo">
-                    <a href="#"><img class="logo" src="./icons/logo.svg" alt="Logo" height="30" width="100"></a>
-                </div>
-                <div class="nav-bar-item">
-                    <img id="humburger" class="menu" src="./icons/menu.png" alt="icon-menu" height="25" width="25">
-                    <img class="menu" src="icons/close.png" alt="closing icon" id="close">
+      <header>
+        <nav class="nav-bar">
+          <div class="nav-bar-item logo">
+            <a href="#"
+              ><img
+                class="logo"
+                src="./icons/logo.svg"
+                alt="Logo"
+                height="30"
+                width="100"
+            /></a>
+          </div>
+          <div class="nav-bar-item">
+            <img
+              id="humburger"
+              class="menu"
+              src="./icons/menu.png"
+              alt="icon-menu"
+              height="25"
+              width="25"
+            />
+            <img
+              class="menu"
+              src="icons/close.png"
+              alt="closing icon"
+              id="close"
+            />
+          </div>
+          <ul id="menu-Elements" class="nav-element">
+            <li><a class="menu-item" href="#Portofolio">Portoflio</a></li>
+            <li><a class="menu-item" href="#About">About</a></li>
+            <li><a class="menu-item" href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-                </div>
-                <ul id="menu-Elements" class="nav-element">
-                    <li><a class="menu-item" href="#Portofolio">Portoflio</a></li>
-                    <li><a class="menu-item" href="#About">About</a></li>
-                    <li><a class="menu-item" href="#Contact">Contact</a></li>
-                </ul>
+      <div class="landing-section">
+        <section>
+          <div id="title-head">
+            <h1>Hey there. I’m Waleed</h1>
+            <h2 id="landingtext">I’m a software developer</h2>
+          </div>
+          <p id="landingtext2">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.<br />
+          </p>
+          <ul class="social-media-icons">
+            <li class="social-media">
+              <a href="https://twitter.com/developerwaleed"
+                ><img src="./icons/Social_icon1.png" alt="Twitter"
+              /></a>
+            </li>
 
-            </nav>
-        </header>
+            <li class="social-media">
+              <a href="https://www.linkedin.com/in/waleed-amjad-51930014a/"
+                ><img src="./icons/Social_icon2.png" alt="Linkedin"
+              /></a>
+            </li>
+            <li class="social-media">
+              <a href="https://www.frontendmentor.io/profile/caasperr"
+                ><img
+                  src="./icons/Social_icon5.png"
+                  alt="FrontEndMentor"
+                  width="22px"
+              /></a>
+            </li>
 
-        <div class="landing-section">
+            <li class="social-media">
+              <a href="	https://medium.com/@waleedamjad"
+                ><img src="./icons/Social_icon3.png" alt="Medium"
+              /></a>
+            </li>
 
-            <section>
-                <div id="title-head">
-                    <h1>Hey there. I’m Waleed </h1>
-                    <h2 id="landingtext">I’m a software developer</h2>
-                </div>
-                <p id="landingtext2">
-                    I can help you build a product , feature or website Look through some of my work and experience! If
-                    you like what you see and have a project you need coded,
-                    don’t hestiate to contact me.<br>
-                </p>
-                <ul class="social-media-icons">
-                    <li class="social-media"><a href="https://twitter.com/"><img src="./icons/Social_icon1.png"
-                                alt="Twitter"></a></li>
-
-                    <li class="social-media"><a href="https://www.linkedin.com/"><img src="./icons/Social_icon2.png"
-                                alt="Linkedin"></a></li>
-
-                    <li class="social-media"><a href="https://medium.com/"><img src="./icons/Social_icon3.png"
-                                alt="Medium"></a></li>
-
-                    <li class="social-media"><a href="https://github.com"><img src="./icons/Social_icon4.png"
-                                alt="Github"></a></li>
-
-                    <li class="social-media"><a href="https://angel.co/"><img src="./icons/Social_icon5.png"
-                                alt="angellist"></a></li>
-                </ul>
-                <a href="#main-heading"><img class="arrow" src="./icons/down-arrow.svg" alt="ArrowDown"></a>
-            </section>
-        </div>
+            <li class="social-media">
+              <a href="https://github.com/caasperr"
+                ><img src="./icons/Social_icon4.png" alt="Github"
+              /></a>
+            </li>
+          </ul>
+          <a href="#main-heading"
+            ><img class="arrow" src="./icons/down-arrow.svg" alt="ArrowDown"
+          /></a>
+        </section>
+      </div>
     </div>
     <section id="Portofolio" class="container2">
-        <h2 id="main-heading">My Recent WORKS</h2>
-        <img id="indicator" src="./icons/Indicator.svg" alt="indicator">
+      <h2 id="main-heading">My Recent WORKS</h2>
+      <img id="indicator" src="./icons/Indicator.svg" alt="indicator" />
     </section>
 
     <div class="card-holder">
-
-        <!-- <div class="card-holder-item">
+      <!-- <div class="card-holder-item">
 
             <div class="holder-image">
                
@@ -105,42 +141,47 @@
     <!-- Modal Start  Mobile-->
 
     <div class="modal" id="modal">
-        <div class="modal-header">
-            <img src="./icons/modal-img.png" alt="image">
-            <button type="button" class="closebtn" id="close-mobile-btn">&times;</button>
-        </div>
+      <div class="modal-header">
+        <img src="./icons/modal-img.png" alt="image" />
+        <button type="button" class="closebtn" id="close-mobile-btn">
+          &times;
+        </button>
+      </div>
 
-        <div class="modal-title">
-            <h3>Keeping track of hundreds of components</h3>
+      <div class="modal-title">
+        <h3>Keeping track of hundreds of components</h3>
+      </div>
+      <div class="modal-body">
+        <ul class="tag">
+          <li class="tag-item">Ruby on rails</li>
+          <li class="tag-item">css</li>
+          <li class="tag-item">JavaScript</li>
+        </ul>
+        <div class="modal-discription">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
+            perferendis quidem error a dolores nemo dolorem iure vel porro
+            quaerat veniam consequatur veritatis odio accusantium quo aliquam
+            nesciunt. Adipisci, laboriosam architecto, harum sint suscipit
+            voluptas esse nesciunt magni nostrum rem molestiae odio? Atque
+            commodi quis repudiandae quae fuga. Repellat quod fuga ab quibusdam
+            mollitia, ea recusandae ipsam quasi eos tempora velit ducimus illo,
+            a commodi veritatis porro et facere aliquid. Sequi tenetur,
+            explicabo nostrum similique blanditiis laboriosam inventore quam
+            voluptate.
+          </p>
         </div>
-        <div class="modal-body">
-            <ul class="tag">
-                <li class="tag-item">Ruby on rails</li>
-                <li class="tag-item">css</li>
-                <li class="tag-item">JavaScript</li>
-            </ul>
-            <div class="modal-discription">
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, perferendis quidem error a dolores
-                    nemo dolorem iure vel porro quaerat veniam consequatur veritatis odio accusantium quo aliquam
-                    nesciunt. Adipisci, laboriosam architecto, harum sint suscipit voluptas esse nesciunt magni nostrum
-                    rem molestiae odio? Atque commodi quis repudiandae quae fuga. Repellat quod fuga ab quibusdam
-                    mollitia, ea recusandae ipsam quasi eos tempora velit ducimus illo, a commodi veritatis porro et
-                    facere aliquid. Sequi tenetur, explicabo nostrum similique blanditiis laboriosam inventore quam
-                    voluptate.</p>
-            </div>
-        </div>
-        <div class="modal-btn-div">
-            <button type="button" class="modal-btn">
-                <span>See Live</span>
-                <img src="./icons/model-btn-icon1.svg" alt="social icon">
-
-            </button>
-            <button type="button" class="modal-btn">
-                <span>See Source</span>
-                <img src="./icons/model-btn-icon2.svg" alt="social icon2">
-            </button>
-        </div>
+      </div>
+      <div class="modal-btn-div">
+        <button type="button" class="modal-btn">
+          <span>See Live</span>
+          <img src="./icons/model-btn-icon1.svg" alt="social icon" />
+        </button>
+        <button type="button" class="modal-btn">
+          <span>See Source</span>
+          <img src="./icons/model-btn-icon2.svg" alt="social icon2" />
+        </button>
+      </div>
     </div>
     <div id="overlay"></div>
 
@@ -149,213 +190,224 @@
     <!-- Modal Start  Desktop-->
 
     <div class="desk-modal" id="desk-modal">
-        <div class="deskmodal-header">
-            <button type="button" class="deskclosebtn" id="closebtnDSK">&times;</button>
-            <img src="./icons/deskmodal-header.png" alt="DeskModalImage" height="330" width="500">
+      <div class="deskmodal-header">
+        <button type="button" class="deskclosebtn" id="closebtnDSK">
+          &times;
+        </button>
+        <img
+          src="./icons/deskmodal-header.png"
+          alt="DeskModalImage"
+          height="330"
+          width="500"
+        />
+      </div>
+
+      <div class="Desk-modal-title">
+        <h3>Keeping track of hundreds of components</h3>
+        <div class="Desk-modal-btn-div">
+          <button type="button" class="Deskmodal-btn">
+            <span>See Live</span>
+            <img src="./icons/model-btn-icon1.svg" alt="social icon" />
+          </button>
+          <button type="button" class="Deskmodal-btn">
+            <span>See Source</span>
+            <img src="./icons/model-btn-icon2.svg" alt="social icon2" />
+          </button>
         </div>
-
-        <div class="Desk-modal-title">
-            <h3>Keeping track of hundreds of components</h3>
-            <div class="Desk-modal-btn-div">
-                <button type="button" class="Deskmodal-btn">
-                    <span>See Live</span>
-                    <img src="./icons/model-btn-icon1.svg" alt="social icon">
-
-                </button>
-                <button type="button" class="Deskmodal-btn">
-                    <span>See Source</span>
-                    <img src="./icons/model-btn-icon2.svg" alt="social icon2">
-                </button>
-            </div>
+      </div>
+      <div class="Desk-modal-body">
+        <ul class="tag">
+          <li class="tag-item">Ruby on rails</li>
+          <li class="tag-item">css</li>
+          <li class="tag-item">JavaScript</li>
+          <li class="tag-item">BootStrap</li>
+          <li class="tag-item">Terminal</li>
+          <li class="tag-item">CodePen</li>
+        </ul>
+        <div class="Desk-modal-discription">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
+            perferendis quidem error a dolores nemo dolorem iure vel porro
+            quaerat veniam consequatur veritatis odio accusantium quo aliquam
+            nesciunt. Adipisci, laboriosam architecto, harum sint suscipit
+            voluptas esse nesciunt magni nostrum rem molestiae odio? Atque
+            commodi quis repudiandae quae fuga. Repellat quod fuga ab quibusdam
+            mollitia, ea recusandae ipsam quasi eos tempora velit ducimus illo,
+            a commodi veritatis porro et facere aliquid. Sequi tenetur,
+            explicabo nostrum similique blanditiis laboriosam inventore quam
+            voluptate.
+          </p>
         </div>
-        <div class="Desk-modal-body">
-            <ul class="tag">
-                <li class="tag-item">Ruby on rails</li>
-                <li class="tag-item">css</li>
-                <li class="tag-item">JavaScript</li>
-                <li class="tag-item">BootStrap</li>
-                <li class="tag-item">Terminal</li>
-                <li class="tag-item">CodePen</li>
-            </ul>
-            <div class="Desk-modal-discription">
-
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, perferendis quidem error a dolores
-                    nemo dolorem iure vel porro quaerat veniam consequatur veritatis odio accusantium quo aliquam
-                    nesciunt. Adipisci, laboriosam architecto, harum sint suscipit voluptas esse nesciunt magni nostrum
-                    rem molestiae odio? Atque commodi quis repudiandae quae fuga. Repellat quod fuga ab quibusdam
-                    mollitia, ea recusandae ipsam quasi eos tempora velit ducimus illo, a commodi veritatis porro et
-                    facere aliquid. Sequi tenetur, explicabo nostrum similique blanditiis laboriosam inventore quam
-                    voluptate.</p>
-            </div>
-        </div>
-
+      </div>
     </div>
     <div id="Deskoverlay"></div>
 
     <!-- Modal Ends  -->
 
     <section id="About" class="about-me">
-
-        <div id="title">
-            <h2>About me</h2>
-        </div>
-        <p class="about-me-body">
-            I can help you build a product , feature or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded,
-            don’t hestiate to contact me.
-        </p>
-        <div id="btn-2">
-            <button type="button" class="btn-2">Get My Resume</button>
-        </div>
+      <div id="title">
+        <h2>About me</h2>
+      </div>
+      <p class="about-me-body">
+        I can help you build a product , feature or website Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, don’t hestiate to contact me.
+      </p>
+      <div id="btn-2">
+        <button type="button" class="btn-2">Get My Resume</button>
+      </div>
     </section>
     <div class="skills">
-        <div class="skils-container">
-
-            <div class="icon">
-                <img src="./icons/languages.svg" alt="langauges">
-            </div>
-            <div class="title">
-                <h2>Languages</h2>
-            </div>
-            <div class="discription">
-                <ul class="skills-tag">
-
-                    <li class="skillstag-item">
-                        JavaScript
-                    </li>
-                    <li class="skillstag-item">
-                        Ruby
-                    </li>
-                    <li class="skillstag-item">
-                        HTML
-                    </li>
-                    <li class="skillstag-item">
-                        CSS
-                    </li>
-                </ul>
-            </div>
-
+      <div class="skils-container">
+        <div class="icon">
+          <img src="./icons/languages.svg" alt="langauges" />
         </div>
-        <div class="skils-container">
-
-            <div class="icon">
-                <img src="./icons/Framework.svg" alt="Framework">
-            </div>
-            <div class="title">
-                <h2>Frameworks</h2>
-            </div>
-            <div class="discription">
-                <ul class="skills-tag">
-
-                    <li class="skillstag-item">
-                        Bootstrap
-                    </li>
-                    <li class="skillstag-item">
-                        Ruby on rails
-                    </li>
-                    <li class="skillstag-item">
-                        RSpec
-                    </li>
-                    <li class="skillstag-item">
-                        Capybara
-                    </li>
-                    <li class="skillstag-item">
-                        Selenium
-                    </li>
-                </ul>
-            </div>
-
+        <div class="title">
+          <h2>Languages</h2>
         </div>
-        <div class="skils-container">
-
-            <div class="icon">
-                <img src="./icons/Skills.svg" alt="Skills">
-            </div>
-            <div class="title">
-                <h2>Skills</h2>
-            </div>
-            <div class="discription">
-                <ul class="skills-tag">
-
-                    <li class="skillstag-item">
-                        Codekit
-                    </li>
-                    <li class="skillstag-item">
-                        Gthub
-                    </li>
-                    <li class="skillstag-item">
-                        Codepen
-                    </li>
-                    <li class="skillstag-item">
-                        Gitlab
-                    </li>
-                    <li class="skillstag-item">
-                        Terminal
-                    </li>
-                </ul>
-            </div>
-
+        <div class="discription">
+          <ul class="skills-tag">
+            <li class="skillstag-item">JavaScript</li>
+            <li class="skillstag-item">Ruby</li>
+            <li class="skillstag-item">HTML</li>
+            <li class="skillstag-item">CSS</li>
+          </ul>
         </div>
+      </div>
+      <div class="skils-container">
+        <div class="icon">
+          <img src="./icons/Framework.svg" alt="Framework" />
+        </div>
+        <div class="title">
+          <h2>Frameworks</h2>
+        </div>
+        <div class="discription">
+          <ul class="skills-tag">
+            <li class="skillstag-item">Bootstrap</li>
+            <li class="skillstag-item">Ruby on rails</li>
+            <li class="skillstag-item">RSpec</li>
+            <li class="skillstag-item">Capybara</li>
+            <li class="skillstag-item">Selenium</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skils-container">
+        <div class="icon">
+          <img src="./icons/Skills.svg" alt="Skills" />
+        </div>
+        <div class="title">
+          <h2>Skills</h2>
+        </div>
+        <div class="discription">
+          <ul class="skills-tag">
+            <li class="skillstag-item">Codekit</li>
+            <li class="skillstag-item">Gthub</li>
+            <li class="skillstag-item">Codepen</li>
+            <li class="skillstag-item">Gitlab</li>
+            <li class="skillstag-item">Terminal</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <footer id="Contact">
-        <div class="inner-footer">
-            <div id="footer-text">
-
-                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-                </p>
-
+      <div class="inner-footer">
+        <div id="footer-text">
+          
+            <div class="inside-text">
+                I'm always interested in hearing about new projects, so if you'd
+                like to chat please get in touch.
             </div>
-            <form id="form" class="mobile-form" action="https://formspree.io/f/mnqwodgq" method="post">
-
-                <div class="field">
-                    <input type="text" maxlength="30" name="user" placeholder="Full name" required>
-                </div>
-
-                <div class="field">
-                    <input type= "email" id= "email" maxlength="30" name="email" placeholder= "Email Address" required>
-                    <small></small>
-                </div>
-
-                <div class= "field">
-                    <textarea maxlength="500" name="message" placeholder="Enter text here" required></textarea>
-                    <small></small>
-                </div>
-                <div class="field">
-                    <button class="btn-2" type="submit" id="submit">Get in Touch</button>
-                    <small id="errors"></small>
-                </div>
-
-            </form>
-
+          
         </div>
+        <form
+          id="form"
+          class="mobile-form"
+          action="https://formspree.io/f/mnqwodgq"
+          method="post"
+        >
+          <div class="field">
+            <input
+              type="text"
+              maxlength="30"
+              name="user"
+              placeholder="Full name"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <input
+              type="email"
+              id="email"
+              maxlength="30"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <small></small>
+          </div>
+
+          <div class="field">
+            <textarea
+              maxlength="500"
+              name="message"
+              placeholder="Enter text here"
+              required
+            ></textarea>
+            <small></small>
+          </div>
+          <div class="field">
+            <button class="btn-2" type="submit" id="submit">
+              Get in Touch
+            </button>
+            <small id="errors"></small>
+          </div>
+        </form>
+      </div>
+      <div>
         <div>
-            <div>
-                <ul class="social-media-icons " id="footer-icons">
-                    <li class="social-media"><a href="https://twitter.com/"><img src="./icons/Social_icon1.png"
-                                alt="Twitter"></a></li>
+          <ul class="social-media-icons">
+            <li class="social-media">
+              <a href="https://twitter.com/developerwaleed"
+                ><img src="./icons/Social_icon1.png" alt="Twitter"
+              /></a>
+            </li>
 
-                    <li class="social-media"><a href="https://www.linkedin.com/"><img src="./icons/Social_icon2.png"
-                                alt="Linkedin"></a></li>
+            <li class="social-media">
+              <a href="https://www.linkedin.com/in/waleed-amjad-51930014a/"
+                ><img src="./icons/Social_icon2.png" alt="Linkedin"
+              /></a>
+            </li>
+            <li class="social-media">
+              <a href="https://www.frontendmentor.io/profile/caasperr"
+                ><img
+                  src="./icons/Social_icon5.png"
+                  alt="FrontEndMentor"
+                  width="22px"
+              /></a>
+            </li>
 
-                    <li class="social-media"><a href="https://medium.com/"><img src="./icons/Social_icon3.png"
-                                alt="Medium"></a></li>
+            <li class="social-media">
+              <a href="	https://medium.com/@waleedamjad"
+                ><img src="./icons/Social_icon3.png" alt="Medium"
+              /></a>
+            </li>
 
-                    <li class="social-media"><a href="https://github.com"><img src="./icons/Social_icon4.png"
-                                alt="Github"></a></li>
-
-                    <li class="social-media"><a href="https://angel.co/"><img src="./icons/Social_icon5.png"
-                                alt="angellist"></a></li>
-                </ul>
-            </div>
-
-            <div id="emailfooter">
-                <p>myemailhere@email.com</p>
-                <p id="footer-indicator">_____________</p>
-            </div>
+            <li class="social-media">
+              <a href="https://github.com/caasperr"
+                ><img src="./icons/Social_icon4.png" alt="Github"
+              /></a>
+            </li>
+          </ul>
         </div>
+
+        <div id="emailfooter">
+          <p>waleedamjad99@hotmail.com</p>
+          <p id="footer-indicator">_____________</p>
+        </div>
+      </div>
     </footer>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
