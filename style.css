@@ -747,7 +747,8 @@ footer {
 
   .about-me {
     padding-top: 70px;
-    background-image: url(./icons/right-about-desk.svg),
+    background-image:
+      url(./icons/right-about-desk.svg),
       url(./icons/left-about-desk.svg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -775,9 +776,13 @@ footer {
     flex-direction: column;
     gap: 100px;
     margin: auto auto;
-    background-image: url(./icons/desk-f1.svg), url(./icons/desk-f2.svg),
+    background-image:
+      url(./icons/desk-f1.svg),
+      url(./icons/desk-f2.svg),
       url(./icons/desk-f3.svg);
-    background-position: bottom 100px left, bottom 50px left 300px,
+    background-position:
+      bottom 100px left,
+      bottom 50px left 300px,
       bottom 10px right;
     background-size: 100px;
   }
