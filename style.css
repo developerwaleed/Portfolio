@@ -698,6 +698,10 @@ footer {
     color: #344563;
   }
 
+  .card-holder-item {
+    margin: 15px;
+  }
+
   .Desk-modal-btn-div {
     display: flex;
     justify-content: flex-end;
@@ -791,7 +795,7 @@ footer {
 
   .mobile-form {
     display: flex;
-    /* flex-direction: row; */
+    gap: 30px;
     flex-wrap: wrap;
   }
 
