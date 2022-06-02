@@ -3,13 +3,13 @@ My-Portfolio:
 
 Screenshot 1                                      | Screenshot 2|
 :------------------------------------------------:|:-----------------------------------------------:
-![](./Screenshots/Screenshot%201.png)             |  ![](./Screenshots/Screenshot%202.png)
+![](./icons/ScreentShots/Screenshot%204.png)             |  ![](./icons/ScreentShots/Screenshot5.png)
 |Screenshot 3                                     |  Screenshot 4 |                   
 :------------------------------------------------:|:------------------------------------------------:
-![](./Screenshots/Screenshot%203.png)             |![](./Screenshots/Screenshot%204.png)
+![](./icons/ScreentShots/Screenshot%206.png)             |![](./icons/ScreentShots/Screenshot1.png)
 |Screenshot 5                                     |  Screenshot 6 |                   
 :------------------------------------------------:|:------------------------------------------------:
-![](./Screenshots/Screenshot%205.png)             |![](./Screenshots/Screenshot%206.png)
+![](./icons/ScreentShots/Screenshot2.png)             |![](./icons/ScreentShots/Screenshot3.png)
 
 ## Built With
 
