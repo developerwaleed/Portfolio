@@ -1,45 +1,23 @@
-Portfolio: 
+My-Portfolio: 
+## Welcome! 👋          
 
-MileStone 1:
->Portfolio for Mobile Version.
->Its responsive
->The units like rem, em, vh ,vw are used.
-
-
-MileStone2: 
-The Fetures added to the project are:
-> Social icons are now clickable.
-> Added image place holders.
-> Added About me Section.
-> Added Skills Section.
-
-MileStone 3:
-> Footer Added.
-> Styling Done.
-> Added Form.
-> All the fonts, colors and design is from "FIGMA TEMPLATE 3".
-
-Milestone 4:
->Added Transitions to the Buttons, Arrows, Social media icons
-
-Milestone 5:
->Fix Accessabilty Issues.
-
-MileStone 7: Mobile-Menu
-
->Add Close Button.
-Add Events to buttons.
-
-MileStone 8: Add Modal
-
->Add Modal for Mobile and For Desktop.
->Add Projects Data to DOM dynamically using JavaScript.
+Screenshot 1                                      | Screenshot 2|
+:------------------------------------------------:|:-----------------------------------------------:
+![](./Screenshots/Screenshot%201.png)             |  ![](./Screenshots/Screenshot%202.png)
+|Screenshot 3                                     |  Screenshot 4 |                   
+:------------------------------------------------:|:------------------------------------------------:
+![](./Screenshots/Screenshot%203.png)             |![](./Screenshots/Screenshot%204.png)
+|Screenshot 5                                     |  Screenshot 6 |                   
+:------------------------------------------------:|:------------------------------------------------:
+![](./Screenshots/Screenshot%205.png)             |![](./Screenshots/Screenshot%206.png)
 
 ## Built With
 
-- HTML, CSS
-- Plain CSS
-- Linter is used to make the project useable and readble for everyone
+- ✔️ HTML, CSS, JavaScript😉
+- ✔️ No FrameWork is Used.😋
+- ✔️ Grid, FlexBox is used to position the elements in DOM. ✅
+- ✔️ Javascript is used to make the website Interactive.😋
+- ✔️ Linter is used to make the project Error Free.✅
 
 ## Live Demo (if available)
 
@@ -67,8 +45,9 @@ Can be used to make your own portfolio using my template.
 
 👤 **Waleed Amjad**
 
-- GitHub: [@githubhandle](https://github.com/caasperr)
--TwitterL [@developerwaleed] (https://twitter.com/developerwaleed)
+| 👤 Name | Github | Twitter | LinkedIn |
+|------|--------|---------|----------|
+|Waleed Amjad|[@caasper](https://github.com/caasperr)|[@developerwaleed](https://twitter.com/developerwaleed)|[Waleed Amjad](https://www.linkedin.com/in/waleed-amjad-51930014a/)||
 
 ## Show your support
 
