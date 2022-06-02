@@ -1,7 +1,7 @@
 * {
   padding: 0%;
   margin: 0%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
@@ -541,7 +541,7 @@ footer {
   }
 
   .nav-element a::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 100%;
@@ -698,6 +698,10 @@ footer {
     color: #344563;
   }
 
+  .card-holder-item {
+    margin: 15px;
+  }
+
   .Desk-modal-btn-div {
     display: flex;
     justify-content: flex-end;
@@ -743,7 +747,9 @@ footer {
 
   .about-me {
     padding-top: 70px;
-    background-image: url(./icons/right-about-desk.svg), url(./icons/left-about-desk.svg);
+    background-image:
+      url(./icons/right-about-desk.svg),
+      url(./icons/left-about-desk.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top -20px right, bottom 20px left;
@@ -770,26 +776,31 @@ footer {
     flex-direction: column;
     gap: 100px;
     margin: auto auto;
-    background-image: url(./icons/desk-f1.svg), url(./icons/desk-f2.svg), url(./icons/desk-f3.svg);
-    background-position: bottom 100px left, bottom 50px left 300px, bottom 10px right;
+    background-image:
+      url(./icons/desk-f1.svg),
+      url(./icons/desk-f2.svg),
+      url(./icons/desk-f3.svg);
+    background-position:
+      bottom 100px left,
+      bottom 50px left 300px,
+      bottom 10px right;
     background-size: 100px;
   }
 
   #footer-text {
-    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
-    margin-left: -50px;
-    text-align: center;
   }
 
-  #footer-text p {
-    margin-left: 50px;
-    padding-top: 20px;
+  .inside-text {
+    width: 35vw;
   }
 
   .mobile-form {
     display: flex;
-    flex-direction: row;
+    gap: 30px;
     flex-wrap: wrap;
   }
 
@@ -827,6 +838,7 @@ footer {
   .inner-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
   }
 
   #foot-ind {
