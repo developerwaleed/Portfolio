@@ -12,6 +12,8 @@ const appearMobileModel = document.getElementById('modal'); // Target using ID
 const appearDeskModel = document.getElementById('desk-modal'); // Target using ID
 const MobileModal = document.querySelector('.modal'); // Target using Class
 const deskModal = document.querySelector('.desk-modal'); // Target using ID
+const closeModal = document.querySelector('#close-mobile-btn'); // Target using ID
+const closeModalDSK = document.querySelector('#closebtnDSK'); // Target using ID
 const MobOverlay = document.querySelector('#overlay');
 const Deskoverlay = document.querySelector('#Deskoverlay');
 const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -61,8 +63,9 @@ function generatProject({ name, image, technologies }, index) {
       
       <div class="holder-discription">
         <ul class="tag">
-          ${technologies.map((technology) => `<li class="tag-item">${technology}</li>`).join('')
-}
+          ${technologies
+            .map((technology) => `<li class="tag-item">${technology}</li>`)
+            .join('')}
         </ul>
       </div>
       <button class="btn" id="modal-btn-${index}" >See Project</button>
@@ -123,23 +126,39 @@ const projects = [
   },
 ];
 
-const htmlProjects = projects.map((project, index) => generatProject(project, index)).join('');
+const htmlProjects = projects
+  .map((project, index) => generatProject(project, index))
+  .join('');
 
 projectsContainer.innerHTML = htmlProjects;
 
 // Iterates to input all the projects
 projects.forEach((project, index) => {
-  document.getElementById(`modal-btn-${index}`).addEventListener('click', () => {
-    if (mediaQuery.matches) {
-      appearDeskModel.style.display = 'flex';
-      deskModal.classList.add('active');
-      Deskoverlay.classList.add('active');
-    } else {
-      appearMobileModel.style.display = 'flex';
-      MobileModal.classList.add('active');
-      MobOverlay.classList.add('active');
-    }
-  });
+  document
+    .getElementById(`modal-btn-${index}`)
+    .addEventListener('click', () => {
+      if (mediaQuery.matches) {
+        appearDeskModel.style.display = 'flex';
+        deskModal.classList.add('active');
+        Deskoverlay.classList.add('active');
+      } else {
+        appearMobileModel.style.display = 'flex';
+        MobileModal.classList.add('active');
+        MobOverlay.classList.add('active');
+      }
+    });
+});
+
+closeModal.addEventListener('click', () => {
+  appearMobileModel.style.display = 'none';
+  MobileModal.classList.remove('active');
+  MobOverlay.classList.remove('active');
+});
+
+closeModalDSK.addEventListener('click', () => {
+  appearDeskModel.style.display = 'none';
+  deskModal.classList.remove('active');
+  Deskoverlay.classList.remove('active');
 });
 
 // Code to Validate Form

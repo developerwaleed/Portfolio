@@ -96,6 +96,7 @@ header {
   list-style-type: none;
   justify-content: center;
   gap: 10px 30px;
+  margin-top: 2.5rem;
 }
 
 .social-media {
