@@ -91,6 +91,12 @@ header {
   text-align: center;
 }
 
+.projectImg {
+padding: 20px ;
+padding-top: 82px;
+
+}
+
 .social-media-icons {
   display: flex;
   list-style-type: none;
@@ -158,8 +164,9 @@ header {
 .holder-image {
   width: 17.9rem;
   height: 474px;
-  background-color: #ebf0ee;
+  /* background-color: #ebf0ee; */
   border-radius: 10px;
+  border-bottom: 10px solid gray;
 }
 
 .holder-discription {

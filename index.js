@@ -56,7 +56,13 @@ menuItems.forEach((menuItem) => {
 function generatProject({ name, image, technologies }, index) {
   return `
   <div class="card-holder-item">
-    <div class="holder-image">${image}</div>
+    <div class="holder-image projectImg">
+    <img
+                src=${image}
+                alt='Project img'
+                height="150"
+    />
+    </div>
       <div class="holder-title">
           <h3>${name}</h3>
       </div>
@@ -79,48 +85,24 @@ const projects = [
   {
     name: 'Project One',
     description: 'Test',
-    image: './images/bg.jpg',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
-    source: 'https://google.com',
+    image: './assets/projects/mock1.png',
+    technologies: ['TailwindCSS', 'React', 'Redux'],
+    liveVersion: 'https://spacex-travellers-hub.herokuapp.com/',
+    source: 'https://github.com/developerwaleed/SpaceX-Traveller-Hub',
   },
   {
     name: 'Project Two',
     description: 'Test',
-    image: './images/bg.jpg',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    image: './assets/projects/mock2.png',
+    technologies: ['Html','CSS', 'JavaScript'],
     liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
     source: 'https://google.com',
   },
   {
     name: 'Project Three',
     description: 'Test',
-    image: './images/bg.jpg',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
-    source: 'https://google.com',
-  },
-  {
-    name: 'Project four',
-    description: 'Test',
-    image: './images/bg.jpg',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
-    source: 'https://google.com',
-  },
-  {
-    name: 'Project Five',
-    description: 'Test',
-    image: './images/bg.jpg',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
-    liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
-    source: 'https://google.com',
-  },
-  {
-    name: 'Project Six',
-    description: 'Test',
-    image: './images/bg.jpg',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    image: './assets/projects/mock3.png',
+    technologies: ['Html','CSS', 'JavaScript'],
     liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
     source: 'https://google.com',
   },

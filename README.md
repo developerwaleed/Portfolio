@@ -1,15 +1,7 @@
 Portfolio Template: 
 ## Welcome! 👋          
 
-Screenshot 1                                      | Screenshot 2|
-:------------------------------------------------:|:-----------------------------------------------:
-![](./icons/ScreentShots/Screenshot%204.png)             |  ![](./icons/ScreentShots/Screenshot5.png)
-|Screenshot 3                                     |  Screenshot 4 |                   
-:------------------------------------------------:|:------------------------------------------------:
-![](./icons/ScreentShots/Screenshot%206.png)             |![](./icons/ScreentShots/Screenshot1.png)
-|Screenshot 5                                     |  Screenshot 6 |                   
-:------------------------------------------------:|:------------------------------------------------:
-![](./icons/ScreentShots/Screenshot2.png)             |![](./icons/ScreentShots/Screenshot3.png)
+![App Screenshot](./assets/mock.png)
 
 ## Built With
 
