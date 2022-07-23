@@ -1,4 +1,4 @@
-My-Portfolio: 
+Portfolio Template: 
 ## Welcome! 👋          
 
 Screenshot 1                                      | Screenshot 2|
@@ -21,7 +21,7 @@ Screenshot 1                                      | Screenshot 2|
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://caasperr.github.io/Portfolio/)
+[Live Demo Link](https://developerwaleed.github.io/Portfolio/)
 
 
 
