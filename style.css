@@ -69,7 +69,7 @@ header {
   display: inline-block;
   height: 800px;
   max-width: 100vw;
-  background-image: url(./icons/BG.png);
+  background-image: url(./assets/icons/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -334,7 +334,7 @@ header {
   padding: 40px 5px;
   display: flex;
   flex-direction: column;
-  background-image: url(./icons/About1.svg), url(./icons/About2.svg);
+  background-image: url(./assets/icons/About1.svg), url(./assets/icons/About2.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top -20px right, bottom 20px left;
@@ -440,7 +440,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./icons/footer.svg);
+  background-image: url(./assets/icons/footer.svg);
   background-repeat: no-repeat;
   background-position: bottom 280px right;
 }
@@ -576,7 +576,7 @@ footer {
 
   .container {
     height: 100vh;
-    background-image: url(./icons/desktop-bg.svg);
+    background-image: url(./assets/icons/desktop-bg.svg);
     background-repeat: no-repeat;
     background-size: 60em;
     background-position: top;
@@ -749,8 +749,8 @@ footer {
   .about-me {
     padding-top: 70px;
     background-image:
-      url(./icons/right-about-desk.svg),
-      url(./icons/left-about-desk.svg);
+      url(./assets/icons/right-about-desk.svg),
+      url(./assets/icons/left-about-desk.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top -20px right, bottom 20px left;
@@ -778,9 +778,9 @@ footer {
     gap: 100px;
     margin: auto auto;
     background-image:
-      url(./icons/desk-f1.svg),
-      url(./icons/desk-f2.svg),
-      url(./icons/desk-f3.svg);
+      url(./assets/icons/desk-f1.svg),
+      url(./assets/icons/desk-f2.svg),
+      url(./assets/icons/desk-f3.svg);
     background-position:
       bottom 100px left,
       bottom 50px left 300px,
