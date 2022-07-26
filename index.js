@@ -83,7 +83,7 @@ function generatProject({ name, image, technologies }, index) {
 // Object to Pass For generating Projects in DOM
 const projects = [
   {
-    name: 'Project One',
+    name: 'SpaceX Travellers Hub',
     description: 'Test',
     image: './assets/projects/mock1.png',
     technologies: ['TailwindCSS', 'React', 'Redux'],
@@ -91,7 +91,7 @@ const projects = [
     source: 'https://github.com/developerwaleed/SpaceX-Traveller-Hub',
   },
   {
-    name: 'Project Two',
+    name: 'To-do List',
     description: 'Test',
     image: './assets/projects/mock2.png',
     technologies: ['Html','CSS', 'JavaScript'],
@@ -99,7 +99,7 @@ const projects = [
     source: 'https://google.com',
   },
   {
-    name: 'Project Three',
+    name: 'Bookstore',
     description: 'Test',
     image: './assets/projects/mock3.png',
     technologies: ['Html','CSS', 'JavaScript'],
