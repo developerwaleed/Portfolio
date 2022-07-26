@@ -85,7 +85,7 @@ const projects = [
   {
     name: 'SpaceX Travellers Hub',
     description: 'Test',
-    image: './assets/projects/mock1.png',
+    image: './assets/Projects/mock1.png',
     technologies: ['TailwindCSS', 'React', 'Redux'],
     liveVersion: 'https://spacex-travellers-hub.herokuapp.com/',
     source: 'https://github.com/developerwaleed/SpaceX-Traveller-Hub',
@@ -93,18 +93,18 @@ const projects = [
   {
     name: 'To-do List',
     description: 'Test',
-    image: './assets/projects/mock2.png',
+    image: './assets/Projects/mock2.png',
     technologies: ['Html','CSS', 'JavaScript'],
-    liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
-    source: 'https://google.com',
+    liveVersion: 'https://developerwaleed.github.io/Interactive-TODOLIST/',
+    source: 'https://github.com/developerwaleed/Interactive-TODOLIST',
   },
   {
     name: 'Bookstore',
     description: 'Test',
-    image: './assets/projects/mock3.png',
+    image: './assets/Projects/mock3.png',
     technologies: ['Html','CSS', 'JavaScript'],
-    liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
-    source: 'https://google.com',
+    liveVersion: 'https://developerwaleed.github.io/Book-Store_Website-V2/',
+    source: 'https://github.com/developerwaleed/Book-Store_Website-V2',
   },
 ];
 
