@@ -45,6 +45,7 @@ closeBtn.addEventListener('click', close);
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', () => {
     if (!mediaQuery.matches) {
+      console.log('yes');
       navbar.style.display = 'none';
       hamburger.style.display = 'flex';
       closeBtn.style.display = 'none';
@@ -74,7 +75,7 @@ function generatProject({ name, image, technologies }, index) {
             .join('')}
         </ul>
       </div>
-      <button class="btn" id="modal-btn-${index}" >See Project</button>
+      <button class="btn" id="modal-btn-${index}" onclick="handleSeeProject(this)">See Project</button>
   </div>
 </div>
   `;
@@ -84,7 +85,8 @@ function generatProject({ name, image, technologies }, index) {
 const projects = [
   {
     name: 'SpaceX Travellers Hub',
-    description: 'Test',
+    description:
+      'SpaceX Travellers Hub is a web application that fetches a package from an api, a missions and Rockets. a traveller can reserve a rocket and join a mission, incase of unsatisfactory you can cancel the rocket and re-reserve. joined mission status is showed as well as the rocket status. all reserved rockets and joined missions are displayed on the profile.',
     image: './assets/Projects/mock1.png',
     technologies: ['TailwindCSS', 'React', 'Redux'],
     liveVersion: 'https://spacex-travellers-hub.herokuapp.com/',
@@ -92,21 +94,127 @@ const projects = [
   },
   {
     name: 'To-do List',
-    description: 'Test',
+    description:
+      'To-do List is a web application that allows its users to organize their day. The users can mark their tasks as done and can also filter the task according to the criteria they want. It comes with integrated LIGHT/DARK Mode',
     image: './assets/Projects/mock2.png',
-    technologies: ['Html','CSS', 'JavaScript'],
+    technologies: ['Html', 'CSS', 'JavaScript'],
     liveVersion: 'https://developerwaleed.github.io/Interactive-TODOLIST/',
     source: 'https://github.com/developerwaleed/Interactive-TODOLIST',
   },
   {
     name: 'Bookstore',
-    description: 'Test',
+    description:
+      'This is a simple website representing a store that sells book. It is purely developed in HTML and CSS.',
     image: './assets/Projects/mock3.png',
-    technologies: ['Html','CSS', 'JavaScript'],
+    technologies: ['Html', 'CSS', 'JavaScript'],
     liveVersion: 'https://developerwaleed.github.io/Book-Store_Website-V2/',
     source: 'https://github.com/developerwaleed/Book-Store_Website-V2',
   },
 ];
+
+function closeModalMobile() {
+  appearMobileModel.style.display = 'none';
+  MobileModal.classList.remove('active');
+  MobOverlay.classList.remove('active');
+}
+
+function closeModalDesktop() {
+  appearDeskModel.style.display = 'none';
+  deskModal.classList.remove('active');
+  Deskoverlay.classList.remove('active');
+}
+
+function handleSeeProject(e) {
+  const name = e.parentElement.children[1].children[0].innerText;
+  projects.forEach((elem) => {
+    if (elem.name === name) {
+      if (mediaQuery.matches) {
+        const modal = `
+            <div class="deskmodal-header">
+                <button type="button" class="deskclosebtn" id="closebtnDSK" onclick="closeModalDesktop()">
+                   &times;
+                </button>
+              <div class="imageDetails">
+                <img
+                  src=${elem.image}
+                  alt="DeskModalImage"
+                  width="450"
+                />
+              </div>
+            </div>
+
+              <div class="Desk-modal-title">
+                <h3>${elem.name}</h3>
+                <div class="Desk-modal-btn-div">
+                <a href="${elem.liveVersion}" target="_blank">
+                  <button type="button" class="Deskmodal-btn"">
+                    <span>See Live</span>
+                    <img src="./assets/icons/model-btn-icon1.svg" alt="social icon" />
+                  </button> 
+                  </a>
+                  <a href="${elem.source}" target="_blank">
+                  <button type="button" class="Deskmodal-btn"">
+                    <span>See Source</span>
+                    <img src="./assets/icons/model-btn-icon2.svg" alt="social icon2" />
+                  </button>
+                  </a>
+                </div>
+              </div>
+              <div class="Desk-modal-body">
+                <ul class="tag">
+                ${elem.technologies
+                  .map(
+                    (technology) => `<li class="tag-item">${technology}</li>`
+                  )
+                  .join('')}
+                </ul>
+                <div class="Desk-modal-discription">
+                  <p>
+                      ${elem.description}
+                  </p>
+                </div>
+              </div>
+                      `;
+        deskModal.innerHTML = modal;
+      }
+    else {
+      const modal = `<div class="modal-header">
+      <img src=${elem.image} alt="image" width = "250"/>
+      <button type="button" class="closebtn" id="close-mobile-btn" onclick="closeModalMobile()">
+        &times;
+      </button>
+    </div>
+
+    <div class="modal-title">
+      <h3>${elem.name}</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="tag">
+      ${elem.technologies
+        .map((technology) => `<li class="tag-item">${technology}</li>`)
+        .join('')}
+      </ul>
+      <div class="modal-discription">
+        <p>
+        ${elem.description}
+        </p>
+      </div>
+    </div>
+    <div class="modal-btn-div">
+      <button type="button" class="modal-btn">
+        <span>See Live</span>
+        <img src="./assets/icons/model-btn-icon1.svg" alt="social icon" />
+      </button>
+      <button type="button" class="modal-btn">
+        <span>See Source</span>
+        <img src="./assets/icons/model-btn-icon2.svg" alt="social icon2" />
+      </button>
+    </div>`;
+      appearMobileModel.innerHTML = modal;
+    }
+  }
+  });
+}
 
 const htmlProjects = projects
   .map((project, index) => generatProject(project, index))
@@ -129,18 +237,6 @@ projects.forEach((project, index) => {
         MobOverlay.classList.add('active');
       }
     });
-});
-
-closeModal.addEventListener('click', () => {
-  appearMobileModel.style.display = 'none';
-  MobileModal.classList.remove('active');
-  MobOverlay.classList.remove('active');
-});
-
-closeModalDSK.addEventListener('click', () => {
-  appearDeskModel.style.display = 'none';
-  deskModal.classList.remove('active');
-  Deskoverlay.classList.remove('active');
 });
 
 // Code to Validate Form

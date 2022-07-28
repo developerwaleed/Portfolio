@@ -205,6 +205,7 @@ padding-top: 82px;
 }
 
 .btn {
+  cursor: pointer;
   align-self: center;
   height: 40px;
   width: 100px;
@@ -261,15 +262,15 @@ padding-top: 82px;
 
 .closebtn {
   cursor: pointer;
-  position: absolute;
   margin-left: -40px;
-  margin-top: 20px;
+  margin-right: -10px;
+  margin-bottom: 10px;
   float: right;
   background: none;
   outline: none;
   border: none;
   font-size: 2rem;
-  color: white;
+  color: black;
 }
 
 .modal-title {
@@ -283,7 +284,6 @@ padding-top: 82px;
   margin-top: 20px;
   font-size: 16px;
   font-weight: 400;
-  height: 250px;
   padding: 15px 0;
   overflow-y: scroll;
 }
@@ -296,7 +296,7 @@ padding-top: 82px;
 
 .modal-btn {
   height: 48px;
-  width: 141px;
+  width: 8rem;
   margin-top: 30px;
   background-color: #22795b;
   color: aliceblue;
@@ -658,7 +658,6 @@ footer {
     transform: translate(-50%, -50%) scale(0);
     z-index: 10;
     padding: 10px 15px;
-    overflow-y: scroll;
     align-items: center;
     transition: 200ms ease-in-out;
   }
@@ -682,6 +681,8 @@ footer {
     border: none;
     font-size: 1.3rem;
     color: #67798e;
+    position: absolute;
+    margin-left: 38rem;
   }
 
   .Desk-modal-title {
@@ -717,6 +718,7 @@ footer {
   }
 
   .Deskmodal-btn {
+    cursor: pointer;
     height: 48px;
     width: 115px;
     background-color: #22795b;
@@ -726,6 +728,10 @@ footer {
     font-size: 15px;
     margin-bottom: 20px;
     transition: ease-in 0.1s;
+  }
+
+  .imageDetails {
+    padding: 30px;
   }
 
   .Deskmodal:hover {
