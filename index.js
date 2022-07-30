@@ -231,6 +231,7 @@ projects.forEach((project, index) => {
         appearDeskModel.style.display = 'flex';
         deskModal.classList.add('active');
         Deskoverlay.classList.add('active');
+        body.style.overflow = 'hidden';
       } else {
         appearMobileModel.style.display = 'flex';
         MobileModal.classList.add('active');

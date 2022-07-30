@@ -1,7 +1,7 @@
 * {
   padding: 0%;
   margin: 0%;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   box-sizing: border-box;
 }
 
@@ -92,9 +92,8 @@ header {
 }
 
 .projectImg {
-padding: 20px ;
-padding-top: 82px;
-
+  padding: 20px;
+  padding-top: 82px;
 }
 
 .social-media-icons {
@@ -144,8 +143,8 @@ padding-top: 82px;
 }
 
 .card-holder {
-  display: grid;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   align-items: center;
   row-gap: 20px;
@@ -341,7 +340,8 @@ padding-top: 82px;
   padding: 40px 5px;
   display: flex;
   flex-direction: column;
-  background-image: url(./assets/icons/About1.svg), url(./assets/icons/About2.svg);
+  background-image: url(./assets/icons/About1.svg),
+    url(./assets/icons/About2.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top -20px right, bottom 20px left;
@@ -386,18 +386,21 @@ padding-top: 82px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .skils-container {
   display: flex;
   flex-direction: column;
   background-color: #ebf0ee;
-  height: 40vh;
-  width: 80vw;
+  height: 43vh;
+  /* width: 80vw; */
   margin: 15px;
   border: 1px solid #d0d9d4;
   border-radius: 10px;
   column-gap: 50px;
+  width: 18rem;
+  max-height: 474px;
 }
 
 .icon {
@@ -549,7 +552,7 @@ footer {
   }
 
   .nav-element a::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 100%;
@@ -629,10 +632,6 @@ footer {
     display: none;
   }
 
-  .card-holder {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .about-me-body {
     margin: auto auto;
     padding: 0 0;
@@ -707,6 +706,12 @@ footer {
     color: #344563;
   }
 
+  .card-holder {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
   .card-holder-item {
     margin: 15px;
   }
@@ -761,8 +766,7 @@ footer {
 
   .about-me {
     padding-top: 70px;
-    background-image:
-      url(./assets/icons/right-about-desk.svg),
+    background-image: url(./assets/icons/right-about-desk.svg),
       url(./assets/icons/left-about-desk.svg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -770,33 +774,29 @@ footer {
   }
 
   .skills {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 40px;
     align-items: center;
     row-gap: 20px;
-    justify-items: center;
   }
 
   .skils-container {
-    width: 300px;
+    /* width: 300px;
     max-width: 300px;
-    height: 352px;
-    max-height: 352px;
+    height: 40vh;
+    max-height: 352px; */
+    width: 18rem;
+    max-height: 474px;
   }
 
   footer {
     flex-direction: column;
     gap: 100px;
     margin: auto auto;
-    background-image:
-      url(./assets/icons/desk-f1.svg),
-      url(./assets/icons/desk-f2.svg),
-      url(./assets/icons/desk-f3.svg);
-    background-position:
-      bottom 100px left,
-      bottom 50px left 300px,
+    background-image: url(./assets/icons/desk-f1.svg),
+      url(./assets/icons/desk-f2.svg), url(./assets/icons/desk-f3.svg);
+    background-position: bottom 100px left, bottom 50px left 300px,
       bottom 10px right;
     background-size: 100px;
   }
