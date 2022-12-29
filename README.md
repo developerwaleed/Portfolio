@@ -181,8 +181,6 @@ If you like this project. Don't forget to give it a ⭐️
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - A big thanks to [@microverseinc](https://github.com/microverseinc) for the project idea, guidance and inspiration.
-- Thanks to Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral and Jacques Le Bailly from [Freepik](https://twitter.com/DeeMaejor) for the background images
-- Thanks to [Cindy shin](https://www.behance.net/adagio07) for the design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
