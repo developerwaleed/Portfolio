@@ -106,7 +106,7 @@ To get a local copy up and running, follow these steps.
 
 ```sh
   git clone https://github.com/developerwaleed/Portfolio.git
-  cd Book-Shop-Website
+  cd Portfolio
 ```
 
 ### Install
