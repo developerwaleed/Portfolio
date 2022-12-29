@@ -141,7 +141,7 @@ You can deploy this project using:
 ## 👥 Authors <a name="author"></a>
 | 👤 Name | Github | Twitter | LinkedIn |
 |------|--------|---------|----------|
-|Waleed Amjad|[@caasperr](https://github.com/developerwaleed)|[@developerwaleed](https://twitter.com/developerwaleed)|[@developerwaleed](https://www.linkedin.com/in/developerwaleed/)|
+|Waleed Amjad|[@developerwaleed](https://github.com/developerwaleed)|[@developerwaleed](https://twitter.com/developerwaleed)|[@developerwaleed](https://www.linkedin.com/in/developerwaleed/)|
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
